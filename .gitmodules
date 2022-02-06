@@ -1,0 +1,6 @@
+[submodule "svegeta/themes/themes/hugo-theme-stack"]
+	path = svegeta/themes/themes/hugo-theme-stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack/
+[submodule "svegeta/themes/hugo-theme-stack"]
+	path = svegeta/themes/hugo-theme-stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack/
