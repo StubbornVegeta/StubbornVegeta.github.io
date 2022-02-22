@@ -1,8 +1,9 @@
 baseurl: https://example.com
-languageCode: en-us
+  # languageCode: en-us
+languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
+title: 倔强的贝吉塔
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -38,12 +39,12 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🔧
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        emoji: 
+        subtitle: cpp/dog/dream
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/header.jpg
 
     article:
         math: false
