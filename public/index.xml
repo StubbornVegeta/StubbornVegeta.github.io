@@ -12,7 +12,8 @@
         <pubDate>Mon, 10 Aug 2020 01:00:00 +0200</pubDate>
         
         <guid>https://example.com/p/test-post/</guid>
-        <description>&lt;img src="https://example.com/cover.jpg" alt="Featured image of post 测试文章" /&gt;&lt;!-- raw HTML omitted --&gt;
+        <description>&lt;img src="https://example.com/cover.jpg" alt="Featured image of post 测试文章" /&gt;&lt;p&gt;倔强的贝吉塔的第一篇hugo博客&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 </description>
         </item>
