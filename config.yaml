@@ -40,7 +40,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: cpp/dog/dream
+        subtitle: vegeta's blog. cpp/dog/dream
         avatar:
             enabled: true
             local: true
