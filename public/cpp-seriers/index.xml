@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cpp-seriers on 倔强的贝吉塔</title>
+    <link>https://example.com/cpp-seriers/</link>
+    <description>Recent content in Cpp-seriers on 倔强的贝吉塔</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 Feb 2022 13:43:00 +0800</lastBuildDate><atom:link href="https://example.com/cpp-seriers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gcc的作用</title>
+      <link>https://example.com/cpp-seriers/gcc/</link>
+      <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
+      
+      <guid>https://example.com/cpp-seriers/gcc/</guid>
+      <description>include的作用</description>
+    </item>
+    
+    <item>
+      <title>include的作用</title>
+      <link>https://example.com/cpp-seriers/include%E7%9A%84%E4%BD%9C%E7%94%A8/</link>
+      <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
+      
+      <guid>https://example.com/cpp-seriers/include%E7%9A%84%E4%BD%9C%E7%94%A8/</guid>
+      <description>include的作用</description>
+    </item>
+    
+  </channel>
+</rss>
