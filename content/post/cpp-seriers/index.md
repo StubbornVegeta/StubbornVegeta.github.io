@@ -8,3 +8,6 @@ tags:
     - C++语法知识
 ---
 
+[include的作用](../../cpp-seriers/include的作用.md)
+[gcc的作用](../../cpp-seriers/gcc.md)
+
