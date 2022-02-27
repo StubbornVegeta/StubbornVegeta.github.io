@@ -6,7 +6,7 @@ paginate: 5
 title: 倔强的贝吉塔
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+# disqusShortname: hugo-theme-stack
 
 # GA Tracking ID
 googleAnalytics:
@@ -57,6 +57,11 @@ params:
     comments:
         enabled: true
         provider: Gissues
+
+        Gissues:
+            repo: svegeta/svegeta
+            issueTerm: pathname
+            label: comment
 
         disqusjs:
             shortname:
