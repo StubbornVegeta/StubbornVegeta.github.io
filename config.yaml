@@ -56,7 +56,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: Gissues
 
         disqusjs:
             shortname:
