@@ -59,7 +59,7 @@ params:
         provider: Gissues
 
         Gissues:
-            repo: svegeta/svegeta
+            repo: svegeta/blog_comments
             issueTerm: pathname
             label: comment
 
