@@ -651,26 +651,26 @@
 
 <script>
     
-    let placeholder = `Type something...\nWaring: If you use QQ as your nickname and email, your QQ avatar information may be leaked!`
+    let placeholder = `...\n`
 
     var valine = new Valine();
 
     valine.init({
         el: '#vcomments',
-        appId: 'KHkYnFUrXOhcAuIDuVXPRFRy-gzGzoHsz',
-        appKey: 'VR5IeFKU36DHOY3tzXQo0aBM',
+        appId: '',
+        appKey: '',
         avatar: 'identicon',
         placeholder: placeholder,
         enableQQ: true,
-        lang:'en',
+        lang:'zh-CN',
         requiredFields: ['nick'],
         recordIP: false,
         visitor: true
     })
 
-    html = `<p><label>Author*</label><input name='nick' placeholder='Your name' class='vnick vinput' type='text'></p>
-            <p><label>Email</label><input name='mail' placeholder='joe@example.com' class='vmail vinput' type='email'></p>
-            <p><label>Website</label><input name='link' placeholder='https://' class='vlink vinput' type='text'></p>`
+    html = `<p><label>昵称（必填）</label><input name='nick' placeholder='张三' class='vnick vinput' type='text'></p>
+            <p><label>邮箱</label><input name='mail' placeholder='joe@example.com' class='vmail vinput' type='email'></p>
+            <p><label>网址</label><input name='link' placeholder='https://' class='vlink vinput' type='text'></p>`
             
     document.querySelector(".vheader").innerHTML = html
     document.querySelector(".vpower.txt-right").innerHTML = ""
