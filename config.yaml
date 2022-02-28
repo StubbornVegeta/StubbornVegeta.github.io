@@ -56,7 +56,7 @@ params:
 
     comments:
         enabled: true
-        provider: Gissues
+        provider: valine
 
         Gissues:
             repo: svegeta/blog_comments
@@ -87,6 +87,15 @@ params:
             clientId:
             clientSecret:
             autoCreateIssue: false
+
+        valine:
+            enable: true
+            appId: KHkYnFUrXOhcAuIDuVXPRFRy-gzGzoHsz
+            appKey: VR5IeFKU36DHOY3tzXQo0aBM
+            avatar: ''
+            placeholder: 
+            visitor: true
+
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
