@@ -92,8 +92,9 @@ params:
             enable: true
             appId: KHkYnFUrXOhcAuIDuVXPRFRy-gzGzoHsz
             appKey: VR5IeFKU36DHOY3tzXQo0aBM
-            avatar: ''
-            placeholder: 
+            avatar: robohash
+            placeholder: placeholder
+            lang: zh-CN
             visitor: true
 
 
