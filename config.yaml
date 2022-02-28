@@ -95,7 +95,6 @@ params:
             avatar: robohash
             placeholder: placeholder
             lang: zh-CN
-            visitor: true
 
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
