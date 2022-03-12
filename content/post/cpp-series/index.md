@@ -1,5 +1,5 @@
 ---
-title: "c++系列文章链接合集"
+title: "C++系列文章链接合集"
 date: 2022-02-25T13:43:00+08:00
 image: "cpp-blue-static.png"
 categories:

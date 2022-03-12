@@ -1,5 +1,5 @@
 ---
-title: "gcc的作用"
+title: "include与头文件"
 date: 2022-02-25T13:43:00+08:00
 image: "cpp-blue-static.png"
 categories:
