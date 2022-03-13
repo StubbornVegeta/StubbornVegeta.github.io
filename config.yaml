@@ -198,6 +198,14 @@ menu:
               ### For demonstration purpose, the home link will be open in a new tab
               newTab: true
               icon: home
+
+        - identifier: links
+          name: 友链
+          url: /links
+          weight: -75
+          params:
+            newTab: true
+            icon: link
     
     social:
         - identifier: github
@@ -205,6 +213,7 @@ menu:
           url: https://github.com/StubbornVegeta
           params:
             icon: brand-github
+
 
         #- identifier: twitter
           #name: Twitter

@@ -27,6 +27,8 @@
 
 @import "custom.scss";
 
+@import "partials/layout/links.scss";
+
 a {
     text-decoration: none;
     color: var(--accent-color);

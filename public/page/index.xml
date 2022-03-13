@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on 倔强的贝吉塔</title>
+    <link>/page/</link>
+    <description>Recent content in Pages on 倔强的贝吉塔</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 13 Mar 2022 17:50:10 +0800</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『 Links 』友情链接</title>
+      <link>/links/</link>
+      <pubDate>Sun, 13 Mar 2022 17:50:10 +0800</pubDate>
+      
+      <guid>/links/</guid>
+      <description>张小飞_WPS WPS for Linux的前辈 skykey 技术很强的师弟</description>
+    </item>
+    
+  </channel>
+</rss>
