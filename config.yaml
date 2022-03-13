@@ -210,7 +210,15 @@ menu:
           params:
             newTab: true
             icon: link
-    
+
+        - identifier: search
+          name: 搜索
+          url: /search
+          weight: -50
+          params:
+            newTab: true
+            icon: search
+
     social:
         - identifier: github
           name: GitHub
