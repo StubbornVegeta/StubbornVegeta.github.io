@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='[TOC] C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处'><title>从源文件到可执行文件</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理'><title>从源文件到可执行文件</title>
 
 <link rel='canonical' href='https://example.com/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/'>
 
 <link rel="stylesheet" href="/scss/style.min.5f343aefda6021d7c99a35d0d8a06abdad13d86982967b5b28f1008e404a346d.css"><meta property='og:title' content='从源文件到可执行文件'>
-<meta property='og:description' content='[TOC] C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处'>
+<meta property='og:description' content='C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理'>
 <meta property='og:url' content='https://example.com/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/'>
 <meta property='og:site_name' content='倔强的贝吉塔'>
 <meta property='og:type' content='article'><meta property='article:section' content='Cpp-Series' /><meta property='article:tag' content='C&#43;&#43;语法知识' /><meta property='article:published_time' content='2022-02-25T13:43:00&#43;08:00'/><meta property='article:modified_time' content='2022-02-25T13:43:00&#43;08:00'/><meta property='og:image' content='https://example.com/cpp-blue-static.png' />
 <meta name="twitter:title" content="从源文件到可执行文件">
-<meta name="twitter:description" content="[TOC] C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://example.com/cpp-blue-static.png' />
     </head>
     <body class="
-    article-page 
+    article-page has-toc
 ">
     <script>
         (function() {
@@ -41,110 +41,22 @@
 </script>
 <div class="container main-container flex 
     
-        on-phone--column extended
+        extended
     
 ">
     
-        <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header class="site-info">
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/header_hu56783fe7a6d3fa0c826cc7642e3eca58_16701_300x0_resize_q75_box.jpg" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <h1 class="site-name"><a href="/">倔强的贝吉塔</a></h1>
-        <h2 class="site-description">等我确定职业再来补充</h2><ol class="social-menu">
-                
-                    <li>
-                        <a 
-                            href='https://github.com/StubbornVegeta'
-                            target="_blank"
-                            title="GitHub"
-                        >
-                            
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                            
-                        </a>
-                    </li>
-                
-            </ol></header>
-
-    <ol class="menu" id="main-menu">
-        
-        
-        
-
-        <li >
-            <a href='/' target="_blank">
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+  <polyline points="15 6 9 12 15 18" />
 </svg>
 
 
 
-                
-                <span>主页</span>
+                <span>返回</span>
             </a>
-        </li>
-        
-
-        
-            <li id="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <span>暗色模式</span>
-            </li>
-        
-    </ol>
-</aside>
-
+        </div>
     
 <main class="main full-width">
     <article class="has-image main-article">
@@ -162,7 +74,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/c&#43;&#43;%E7%B3%BB%E5%88%97/" >
+            <a href="/categories/c&#43;&#43;%E7%B3%BB%E5%88%97/" style="background-color: #2a9d8f; color: #fff;">
                 C&#43;&#43;系列
             </a>
         
@@ -215,18 +127,17 @@
     <section class="article-content">
     
     
-    <p>[TOC]</p>
-<p>C++源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp">    <span class="o">*</span><span class="p">.</span><span class="n">cpp</span>
-      <span class="o">|</span> <span class="o">&lt;-</span> <span class="err">预处理</span>
-     <span class="o">*</span><span class="p">.</span><span class="n">ii</span>
-      <span class="o">|</span> <span class="o">&lt;-</span> <span class="err">编译</span>
-     <span class="o">*</span><span class="p">.</span><span class="n">s</span>
-      <span class="o">|</span> <span class="o">&lt;-</span> <span class="err">汇编</span>
-  <span class="o">*</span><span class="p">.</span><span class="n">o</span> <span class="o">/</span> <span class="o">*</span><span class="p">.</span><span class="n">obj</span>
-      <span class="o">|</span> <span class="o">&lt;-</span> <span class="err">链接</span>
-<span class="o">*</span><span class="p">.</span><span class="n">out</span> <span class="o">/</span> <span class="o">*</span><span class="p">.</span><span class="n">exe</span>
-</code></pre></div><h1 id="预处理">预处理</h1>
+    <p>C++源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。</p>
+<pre tabindex="0"><code>    *.cpp
+      | &lt;- 预处理
+     *.ii
+      | &lt;- 编译
+     *.s
+      | &lt;- 汇编
+  *.o / *.obj
+      | &lt;- 链接
+*.out / *.exe
+</code></pre><h2 id="预处理">预处理</h2>
 <p>预处理主要处理程序中的预处理指令，<code>#</code>开始的都叫做预处理指令，例如<code>#include</code>, <code>#define</code>等。如果你使用g++编译你的C++文件，你可以通过添加<code>-E</code>参数来使你的编译器在预处理完之后，不进行后续操作，从而得到预处理后的文件。</p>
 <p>假设在你当前目录下存在以下三个文件：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="p">|</span>-- main.cpp
@@ -271,7 +182,7 @@
           <span class="s">&#34;syscall        </span><span class="se">\n</span><span class="s">&#34;</span> <span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div><p><code>#include &quot;test.h&quot;</code>指令被替换成了<code>test.h</code>文件中的内容，复制头文件中的内容和宏展开是预处理环节主要做的事情，预处理环节没有语法检查功能。</p>
-<h1 id="编译">编译</h1>
+<h2 id="编译">编译</h2>
 <p>编译过程会将经过预处理之后的程序转换成特定汇编代码，通常可以使用<code>g++ -S</code>将源代码直接转换为汇编代码：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">S</span> <span class="n">main</span><span class="p">.</span><span class="n">cpp</span> <span class="n">test</span><span class="p">.</span><span class="n">cpp</span>
 </code></pre></div><p>执行上述语句你将得到<code>main.s</code>和<code>test.s</code>两个文件：</p>
@@ -331,14 +242,14 @@
 	<span class="na">.ident</span>	<span class="s">&#34;GCC: (GNU) 11.1.0&#34;</span>
 	<span class="na">.section</span>	<span class="no">.note.GNU-stack</span><span class="p">,</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="na">@progbits</span>
 </code></pre></div><p>对于含有多个源文件的程序，g++会分别对每一个源文件执行编译操作。</p>
-<h1 id="汇编">汇编</h1>
+<h2 id="汇编">汇编</h2>
 <p>汇编会将汇编代码转换成机器码，也就是二进制的目标文件。你可以通过<code>g++ -c</code>来完成这步操作，也可以单独使用<code>as</code>指令来完成汇编过程。汇编过程会给每一个源文件产生一个目标文件。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">g++ -c main.s test.s
 
 <span class="c1"># 或者使用as</span>
 as main.s -o main.o
 as test.s -o test.o
-</code></pre></div><h1 id="链接">链接</h1>
+</code></pre></div><h2 id="链接">链接</h2>
 <p>链接过程将多个目标文件以及所需的库文件链接成最终的可执行文件。这里你可以通过<code>g++</code>将多个目标文件链接起来，也可以使用<code>ld</code>进行链接。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">g++ main.o test.o -o main
 <span class="c1"># 或者使用ld</span>
@@ -915,6 +826,35 @@ $ <span class="nb">echo</span> <span class="nv">$?</span>
             >
 
             </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#预处理">预处理</a></li>
+    <li><a href="#编译">编译</a></li>
+    <li><a href="#汇编">汇编</a></li>
+    <li><a href="#链接">链接</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
     
 
         </div>
