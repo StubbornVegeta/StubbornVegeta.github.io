@@ -184,7 +184,7 @@
 </code></pre></div><p><code>#include &quot;test.h&quot;</code>指令被替换成了<code>test.h</code>文件中的内容，复制头文件中的内容和宏展开是预处理环节主要做的事情，预处理环节没有语法检查功能。</p>
 <h2 id="编译">编译</h2>
 <p>编译过程会将经过预处理之后的程序转换成特定汇编代码，通常可以使用<code>g++ -S</code>将源代码直接转换为汇编代码：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">S</span> <span class="n">main</span><span class="p">.</span><span class="n">cpp</span> <span class="n">test</span><span class="p">.</span><span class="n">cpp</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">g++ -S main.cpp test.cpp
 </code></pre></div><p>执行上述语句你将得到<code>main.s</code>和<code>test.s</code>两个文件：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; ********** main.s **********
 </span><span class="c"></span>	<span class="na">.file</span>	<span class="s">&#34;main.cpp&#34;</span>
