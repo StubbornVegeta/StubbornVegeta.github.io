@@ -6,7 +6,16 @@
     <description>Recent content in Pages on 倔强的贝吉塔</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 13 Mar 2022 17:50:10 +0800</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Mar 2022 19:06:32 +0800</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博主信息</title>
+      <link>/user/</link>
+      <pubDate>Sun, 13 Mar 2022 19:06:32 +0800</pubDate>
+      
+      <guid>/user/</guid>
+      <description>一张待添加的简历</description>
+    </item>
+    
     <item>
       <title>『 Links 』友情链接</title>
       <link>/links/</link>

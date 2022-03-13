@@ -211,9 +211,23 @@ menu:
         - identifier: github
           name: GitHub
           url: https://github.com/StubbornVegeta
+          weight: 1
           params:
             icon: brand-github
 
+        - identifier: email
+          name: 邮箱
+          url: mailto:vegetaking@126.com
+          weight: 2
+          params:
+            icon: messages
+
+        - identifier: user
+          name: 博主信息
+          url: /user
+          weight: 3
+          params:
+            icon: user
 
         #- identifier: twitter
           #name: Twitter
