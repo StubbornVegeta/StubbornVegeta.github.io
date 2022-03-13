@@ -149,6 +149,7 @@ params:
     widgets:
         enabled:
             - search
+            - categories
             - archives
             - tag-cloud
 
@@ -157,6 +158,9 @@ params:
 
         tagCloud:
             limit: 10
+
+        categoriesCloud:
+            limit: 20
 
     opengraph:
         twitter:
