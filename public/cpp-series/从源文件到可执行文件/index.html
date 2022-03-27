@@ -140,125 +140,125 @@
 </code></pre><h2 id="预处理">预处理</h2>
 <p>预处理主要处理程序中的预处理指令，<code>#</code>开始的都叫做预处理指令，例如<code>#include</code>, <code>#define</code>等。如果你使用g++编译你的C++文件，你可以通过添加<code>-E</code>参数来使你的编译器在预处理完之后，不进行后续操作，从而得到预处理后的文件。</p>
 <p>假设在你当前目录下存在以下三个文件：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="p">|</span>-- main.cpp
-<span class="p">|</span>-- test.h
-<span class="p">|</span>-- test.cpp
-</code></pre></div><p>三个文件的内容分别是：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cm">/***** main.cpp *****/</span>
-<span class="cp">#include</span> <span class="cpf">&#34;test.h&#34;</span><span class="cp">
-</span><span class="cp"></span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func</span><span class="p">();</span>
-    <span class="k">asm</span> <span class="p">(</span> <span class="s">&#34;movq $60, %rax </span><span class="se">\n</span><span class="s">&#34;</span>
-          <span class="s">&#34;movq $0,  %rdi </span><span class="se">\n</span><span class="s">&#34;</span>
-          <span class="s">&#34;syscall        </span><span class="se">\n</span><span class="s">&#34;</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="cm">/***** test.h *****/</span>
-<span class="kt">void</span> <span class="nf">func</span><span class="p">();</span>
-
-<span class="cm">/***** test.cpp *****/</span>
-<span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
-
-<span class="p">}</span>
-</code></pre></div><p>可以忽略<code>main.cpp</code>中的汇编代码，这只是为了保证手动链接不出错而添加的，可以不用理解这段代码。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="p">|</span>-- main.cpp
+</span></span><span class="line"><span class="cl"><span class="p">|</span>-- test.h
+</span></span><span class="line"><span class="cl"><span class="p">|</span>-- test.cpp
+</span></span></code></pre></div><p>三个文件的内容分别是：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cm">/***** main.cpp *****/</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;test.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">func</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">asm</span> <span class="p">(</span> <span class="s">&#34;movq $60, %rax </span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;movq $0,  %rdi </span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;syscall        </span><span class="se">\n</span><span class="s">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/***** test.h *****/</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">func</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/***** test.cpp *****/</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">func</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>可以忽略<code>main.cpp</code>中的汇编代码，这只是为了保证手动链接不出错而添加的，可以不用理解这段代码。</p>
 <p>在终端输入：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">g++ -E main.cpp -o main.ii
-</code></pre></div><p><code>-o</code>表示输出结果到文件（<code>main.ii</code>）。上面这条指令执行完成之后，你将得到<code>main.ii</code>文件：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp"># 0 &#34;main.cpp&#34;
-</span><span class="cp"># 0 &#34;&lt;built-in&gt;&#34;
-</span><span class="cp"># 0 &#34;&lt;command-line&gt;&#34;
-</span><span class="cp"># 1 &#34;/usr/include</span><span class="cpf">/stdc-predef.h&#34; 1 3 4</span><span class="cp">
-</span><span class="cp"># 0 &#34;&lt;command-line&gt;&#34; 2
-</span><span class="cp"># 1 &#34;main.cpp&#34;
-</span><span class="cp"># 1 &#34;test.h&#34; 1
-</span><span class="cp"></span><span class="kt">void</span> <span class="nf">func</span><span class="p">();</span>
-<span class="cp"># 2 &#34;main.cpp&#34; 2
-</span><span class="cp"></span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">func</span><span class="p">();</span>
-    <span class="k">asm</span> <span class="p">(</span> <span class="s">&#34;movq $60, %rax </span><span class="se">\n</span><span class="s">&#34;</span>
-          <span class="s">&#34;movq $0,  %rdi </span><span class="se">\n</span><span class="s">&#34;</span>
-          <span class="s">&#34;syscall        </span><span class="se">\n</span><span class="s">&#34;</span> <span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div><p><code>#include &quot;test.h&quot;</code>指令被替换成了<code>test.h</code>文件中的内容，复制头文件中的内容和宏展开是预处理环节主要做的事情，预处理环节没有语法检查功能。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">g++ -E main.cpp -o main.ii
+</span></span></code></pre></div><p><code>-o</code>表示输出结果到文件（<code>main.ii</code>）。上面这条指令执行完成之后，你将得到<code>main.ii</code>文件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp"># 0 &#34;main.cpp&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cp"># 0 &#34;&lt;built-in&gt;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cp"># 0 &#34;&lt;command-line&gt;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cp"># 1 &#34;/usr/include</span><span class="cpf">/stdc-predef.h&#34; 1 3 4</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"># 0 &#34;&lt;command-line&gt;&#34; 2
+</span></span></span><span class="line"><span class="cl"><span class="cp"># 1 &#34;main.cpp&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cp"># 1 &#34;test.h&#34; 1
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">void</span> <span class="nf">func</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="cp"># 2 &#34;main.cpp&#34; 2
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">func</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">asm</span> <span class="p">(</span> <span class="s">&#34;movq $60, %rax </span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;movq $0,  %rdi </span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;syscall        </span><span class="se">\n</span><span class="s">&#34;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><code>#include &quot;test.h&quot;</code>指令被替换成了<code>test.h</code>文件中的内容，复制头文件中的内容和宏展开是预处理环节主要做的事情，预处理环节没有语法检查功能。</p>
 <h2 id="编译">编译</h2>
 <p>编译过程会将经过预处理之后的程序转换成特定汇编代码，通常可以使用<code>g++ -S</code>将源代码直接转换为汇编代码：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">g++ -S main.cpp test.cpp
-</code></pre></div><p>执行上述语句你将得到<code>main.s</code>和<code>test.s</code>两个文件：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; ********** main.s **********
-</span><span class="c"></span>	<span class="na">.file</span>	<span class="s">&#34;main.cpp&#34;</span>
-	<span class="na">.text</span>
-	<span class="na">.globl</span>	<span class="no">main</span>
-	<span class="na">.type</span>	<span class="no">main</span><span class="p">,</span> <span class="na">@function</span>
-<span class="nl">main:</span>
-<span class="nl">.LFB0:</span>
-	<span class="na">.cfi_startproc</span>
-	<span class="nf">pushq</span>	<span class="nv">%rbp</span>
-	<span class="na">.cfi_def_cfa_offset</span> <span class="mi">16</span>
-	<span class="na">.cfi_offset</span> <span class="mi">6</span><span class="p">,</span> <span class="p">-</span><span class="mi">16</span>
-	<span class="nf">movq</span>	<span class="nv">%rsp</span><span class="p">,</span> <span class="nv">%rbp</span>
-	<span class="na">.cfi_def_cfa_register</span> <span class="mi">6</span>
-	<span class="nf">call</span>	<span class="no">_Z4funcv@PLT</span>
-<span class="c">#APP
-</span><span class="c"># 5 &#34;main.cpp&#34; 1
-</span><span class="c"></span>	<span class="nf">movq</span> <span class="no">$60</span><span class="p">,</span> <span class="nv">%rax</span> 
-<span class="no">movq</span> <span class="no">$0</span><span class="p">,</span>  <span class="nv">%rdi</span> 
-<span class="no">syscall</span>        
-
-<span class="c"># 0 &#34;&#34; 2
-</span><span class="c">#NO_APP
-</span><span class="c"></span>	<span class="no">movl</span>	<span class="no">$0</span><span class="p">,</span> <span class="nv">%eax</span>
-	<span class="nf">popq</span>	<span class="nv">%rbp</span>
-	<span class="na">.cfi_def_cfa</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span>
-	<span class="nf">ret</span>
-	<span class="na">.cfi_endproc</span>
-<span class="nl">.LFE0:</span>
-	<span class="na">.size</span>	<span class="no">main</span><span class="p">,</span> <span class="no">.-main</span>
-	<span class="na">.ident</span>	<span class="s">&#34;GCC: (GNU) 11.1.0&#34;</span>
-	<span class="na">.section</span>	<span class="no">.note.GNU-stack</span><span class="p">,</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="na">@progbits</span>
-
-
-<span class="c">; ********** test.s **********
-</span><span class="c"></span>	<span class="na">.file</span>	<span class="s">&#34;test.cpp&#34;</span>
-	<span class="na">.text</span>
-	<span class="na">.globl</span>	<span class="no">_Z4funcv</span>
-	<span class="na">.type</span>	<span class="no">_Z4funcv</span><span class="p">,</span> <span class="na">@function</span>
-<span class="nl">_Z4funcv:</span>
-<span class="nl">.LFB0:</span>
-	<span class="na">.cfi_startproc</span>
-	<span class="nf">pushq</span>	<span class="nv">%rbp</span>
-	<span class="na">.cfi_def_cfa_offset</span> <span class="mi">16</span>
-	<span class="na">.cfi_offset</span> <span class="mi">6</span><span class="p">,</span> <span class="p">-</span><span class="mi">16</span>
-	<span class="nf">movq</span>	<span class="nv">%rsp</span><span class="p">,</span> <span class="nv">%rbp</span>
-	<span class="na">.cfi_def_cfa_register</span> <span class="mi">6</span>
-	<span class="nf">nop</span>
-	<span class="nf">popq</span>	<span class="nv">%rbp</span>
-	<span class="na">.cfi_def_cfa</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span>
-	<span class="nf">ret</span>
-	<span class="na">.cfi_endproc</span>
-<span class="nl">.LFE0:</span>
-	<span class="na">.size</span>	<span class="no">_Z4funcv</span><span class="p">,</span> <span class="no">.-_Z4funcv</span>
-	<span class="na">.ident</span>	<span class="s">&#34;GCC: (GNU) 11.1.0&#34;</span>
-	<span class="na">.section</span>	<span class="no">.note.GNU-stack</span><span class="p">,</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="na">@progbits</span>
-</code></pre></div><p>对于含有多个源文件的程序，g++会分别对每一个源文件执行编译操作。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">g++ -S main.cpp test.cpp
+</span></span></code></pre></div><p>执行上述语句你将得到<code>main.s</code>和<code>test.s</code>两个文件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="line"><span class="cl"><span class="c">; ********** main.s **********
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="na">.file</span>	<span class="s">&#34;main.cpp&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.text</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.globl</span>	<span class="no">main</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.type</span>	<span class="no">main</span><span class="p">,</span> <span class="na">@function</span>
+</span></span><span class="line"><span class="cl"><span class="nl">main:</span>
+</span></span><span class="line"><span class="cl"><span class="nl">.LFB0:</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_startproc</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">pushq</span>	<span class="nv">%rbp</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_def_cfa_offset</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_offset</span> <span class="mi">6</span><span class="p">,</span> <span class="p">-</span><span class="mi">16</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">movq</span>	<span class="nv">%rsp</span><span class="p">,</span> <span class="nv">%rbp</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_def_cfa_register</span> <span class="mi">6</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">call</span>	<span class="no">_Z4funcv@PLT</span>
+</span></span><span class="line"><span class="cl"><span class="c">#APP
+</span></span></span><span class="line"><span class="cl"><span class="c"># 5 &#34;main.cpp&#34; 1
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="nf">movq</span> <span class="no">$60</span><span class="p">,</span> <span class="nv">%rax</span> 
+</span></span><span class="line"><span class="cl"><span class="no">movq</span> <span class="no">$0</span><span class="p">,</span>  <span class="nv">%rdi</span> 
+</span></span><span class="line"><span class="cl"><span class="no">syscall</span>        
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 0 &#34;&#34; 2
+</span></span></span><span class="line"><span class="cl"><span class="c">#NO_APP
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="no">movl</span>	<span class="no">$0</span><span class="p">,</span> <span class="nv">%eax</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">popq</span>	<span class="nv">%rbp</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_def_cfa</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">ret</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_endproc</span>
+</span></span><span class="line"><span class="cl"><span class="nl">.LFE0:</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.size</span>	<span class="no">main</span><span class="p">,</span> <span class="no">.-main</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.ident</span>	<span class="s">&#34;GCC: (GNU) 11.1.0&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.section</span>	<span class="no">.note.GNU-stack</span><span class="p">,</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="na">@progbits</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">; ********** test.s **********
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="na">.file</span>	<span class="s">&#34;test.cpp&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.text</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.globl</span>	<span class="no">_Z4funcv</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.type</span>	<span class="no">_Z4funcv</span><span class="p">,</span> <span class="na">@function</span>
+</span></span><span class="line"><span class="cl"><span class="nl">_Z4funcv:</span>
+</span></span><span class="line"><span class="cl"><span class="nl">.LFB0:</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_startproc</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">pushq</span>	<span class="nv">%rbp</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_def_cfa_offset</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_offset</span> <span class="mi">6</span><span class="p">,</span> <span class="p">-</span><span class="mi">16</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">movq</span>	<span class="nv">%rsp</span><span class="p">,</span> <span class="nv">%rbp</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_def_cfa_register</span> <span class="mi">6</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">nop</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">popq</span>	<span class="nv">%rbp</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_def_cfa</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">ret</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.cfi_endproc</span>
+</span></span><span class="line"><span class="cl"><span class="nl">.LFE0:</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.size</span>	<span class="no">_Z4funcv</span><span class="p">,</span> <span class="no">.-_Z4funcv</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.ident</span>	<span class="s">&#34;GCC: (GNU) 11.1.0&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="na">.section</span>	<span class="no">.note.GNU-stack</span><span class="p">,</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="na">@progbits</span>
+</span></span></code></pre></div><p>对于含有多个源文件的程序，g++会分别对每一个源文件执行编译操作。</p>
 <h2 id="汇编">汇编</h2>
 <p>汇编会将汇编代码转换成机器码，也就是二进制的目标文件。你可以通过<code>g++ -c</code>来完成这步操作，也可以单独使用<code>as</code>指令来完成汇编过程。汇编过程会给每一个源文件产生一个目标文件。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">g++ -c main.s test.s
-
-<span class="c1"># 或者使用as</span>
-as main.s -o main.o
-as test.s -o test.o
-</code></pre></div><h2 id="链接">链接</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">g++ -c main.s test.s
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者使用as</span>
+</span></span><span class="line"><span class="cl">as main.s -o main.o
+</span></span><span class="line"><span class="cl">as test.s -o test.o
+</span></span></code></pre></div><h2 id="链接">链接</h2>
 <p>链接过程将多个目标文件以及所需的库文件链接成最终的可执行文件。这里你可以通过<code>g++</code>将多个目标文件链接起来，也可以使用<code>ld</code>进行链接。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">g++ main.o test.o -o main
-<span class="c1"># 或者使用ld</span>
-ld -e main main.o test.o -o main
-</code></pre></div><p>运行可执行文件，并通过echo查看进程返回值</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ ./main
-$ <span class="nb">echo</span> <span class="nv">$?</span>
-<span class="m">0</span>
-</code></pre></div><p>结果显示0，表示可执行文件链接成功。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">g++ main.o test.o -o main
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者使用ld</span>
+</span></span><span class="line"><span class="cl">ld -e main main.o test.o -o main
+</span></span></code></pre></div><p>运行可执行文件，并通过echo查看进程返回值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ./main
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="nv">$?</span>
+</span></span><span class="line"><span class="cl"><span class="m">0</span>
+</span></span></code></pre></div><p>结果显示0，表示可执行文件链接成功。</p>
 
 </section>
 

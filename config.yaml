@@ -204,12 +204,12 @@ menu:
               icon: home
 
         - identifier: links
-          name: 友链
-          url: /links
+          name: 关注
+          url: /following
           weight: -75
           params:
             newTab: true
-            icon: link
+            icon: heart
 
         - identifier: search
           name: 搜索
