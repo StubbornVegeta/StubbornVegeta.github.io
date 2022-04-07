@@ -36,6 +36,8 @@ categories:
 ### 游戏引擎
 ![Hazel](https://hazelengine.com/res/HazelBG.jpg)
 
+接下来就让我们一起学习C++吧。
+
 ## C++文章链接
 
 <!--[C++系列](https://svegeta.gitee.io/categories/c++%E7%B3%BB%E5%88%97/)-->
