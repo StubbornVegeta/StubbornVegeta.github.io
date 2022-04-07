@@ -22,8 +22,75 @@
         <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
         
         <guid>/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</guid>
-        <description>&lt;img src="/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/cpp-blue-static.png" alt="Featured image of post C&#43;&#43;系列文章链接合集" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/categories/c&amp;#43;&amp;#43;%E7%B3%BB%E5%88%97/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;C++系列&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;img src="/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/cpp-blue-static.png" alt="Featured image of post C&#43;&#43;系列文章链接合集" /&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+&lt;p&gt;“为什么要学习C++？”&lt;/p&gt;
+&lt;p&gt;看到这篇文章的人，无论情愿与否，想必都已经决定要学习C++了。不管喜不喜欢C++，我们都必须承认C++是一门实用的语言，古老但又一直保持活力，复杂但又十分重要。下面你将看到C++在不同领域的一些应用。&lt;/p&gt;
+&lt;h2 id=&#34;c可以做什么&#34;&gt;C++可以做什么&lt;/h2&gt;
+&lt;h3 id=&#34;窗口管理器window-manager&#34;&gt;窗口管理器（window manager）&lt;/h3&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/u8iCW4FYD_o&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;桌面应用开发&#34;&gt;桌面应用开发&lt;/h3&gt;
+&lt;h4 id=&#34;wps&#34;&gt;WPS&lt;/h4&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://cdn.mos.cms.futurecdn.net/XpXnzPXGjisFR3Ko6EEdNQ.jpg&#34; &gt;
+		&lt;img src=&#34;https://cdn.mos.cms.futurecdn.net/XpXnzPXGjisFR3Ko6EEdNQ.jpg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;WPS Office&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;WPS Office&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&#34;编辑器开发zep&#34;&gt;编辑器开发（Zep)&lt;/h4&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/T_Kn9VzD3RE&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;图形渲染&#34;&gt;图形渲染&lt;/h3&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/Nwfm6cpskIM&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;游戏引擎&#34;&gt;游戏引擎&lt;/h3&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://hazelengine.com/res/HazelBG.jpg&#34; &gt;
+		&lt;img src=&#34;https://hazelengine.com/res/HazelBG.jpg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Hazel&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Hazel&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;c文章链接&#34;&gt;C++文章链接&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/cpp-series/%e4%bb%8e%e6%ba%90%e6%96%87%e4%bb%b6%e5%88%b0%e5%8f%af%e6%89%a7%e8%a1%8c%e6%96%87%e4%bb%b6&#34; &gt;从源文件到可执行文件&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         
