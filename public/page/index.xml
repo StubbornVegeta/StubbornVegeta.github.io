@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on 倔强的贝吉塔</title>
-    <link>/page/</link>
+    <link>https://svegeta.gitee.io/page/</link>
     <description>Recent content in Pages on 倔强的贝吉塔</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 13 Mar 2022 20:57:05 +0800</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Mar 2022 20:57:05 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Search</title>
-      <link>/search/</link>
+      <link>https://svegeta.gitee.io/search/</link>
       <pubDate>Sun, 13 Mar 2022 20:57:05 +0800</pubDate>
       
-      <guid>/search/</guid>
+      <guid>https://svegeta.gitee.io/search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>博主信息</title>
-      <link>/user/</link>
+      <link>https://svegeta.gitee.io/user/</link>
       <pubDate>Sun, 13 Mar 2022 19:06:32 +0800</pubDate>
       
-      <guid>/user/</guid>
+      <guid>https://svegeta.gitee.io/user/</guid>
       <description>一张待添加的简历</description>
     </item>
     
     <item>
       <title>『倔强的贝吉塔』的关注</title>
-      <link>/following/</link>
+      <link>https://svegeta.gitee.io/following/</link>
       <pubDate>Sun, 13 Mar 2022 17:50:10 +0800</pubDate>
       
-      <guid>/following/</guid>
+      <guid>https://svegeta.gitee.io/following/</guid>
       <description>张小飞_WPS WPS for Linux 开发者 skykey C&amp;#43;&amp;#43;/Qt 程序员 bisqwit 超神的大巴司机</description>
     </item>
     

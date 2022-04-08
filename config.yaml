@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: https://svegeta.gitee.io
   # languageCode: en-us
 languageCode: zh-cn
 theme: hugo-theme-stack

@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/page/</loc>
+    <loc>https://svegeta.gitee.io/page/</loc>
     <lastmod>2022-03-13T20:57:05+08:00</lastmod>
   </url><url>
-    <loc>/search/</loc>
+    <loc>https://svegeta.gitee.io/search/</loc>
     <lastmod>2022-03-13T20:57:05+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://svegeta.gitee.io/</loc>
     <lastmod>2022-03-13T20:57:05+08:00</lastmod>
   </url><url>
-    <loc>/user/</loc>
+    <loc>https://svegeta.gitee.io/user/</loc>
     <lastmod>2022-03-13T19:06:32+08:00</lastmod>
   </url><url>
-    <loc>/following/</loc>
+    <loc>https://svegeta.gitee.io/following/</loc>
     <lastmod>2022-03-13T17:50:10+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://svegeta.gitee.io/categories/</loc>
     <lastmod>2022-02-26T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/categories/cmake%E7%B3%BB%E5%88%97/</loc>
+    <loc>https://svegeta.gitee.io/categories/cmake%E7%B3%BB%E5%88%97/</loc>
     <lastmod>2022-02-26T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/p/cmake%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</loc>
+    <loc>https://svegeta.gitee.io/p/cmake%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</loc>
     <lastmod>2022-02-26T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>https://svegeta.gitee.io/post/</loc>
     <lastmod>2022-02-26T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/categories/c&#43;&#43;%E7%B3%BB%E5%88%97/</loc>
+    <loc>https://svegeta.gitee.io/categories/c&#43;&#43;%E7%B3%BB%E5%88%97/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</loc>
+    <loc>https://svegeta.gitee.io/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</loc>
+    <loc>https://svegeta.gitee.io/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/cpp-series/</loc>
+    <loc>https://svegeta.gitee.io/cpp-series/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/cpp-series/include%E4%B8%8E%E5%A4%B4%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://svegeta.gitee.io/cpp-series/include%E4%B8%8E%E5%A4%B4%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://svegeta.gitee.io/tags/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://svegeta.gitee.io/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url>
 </urlset>
