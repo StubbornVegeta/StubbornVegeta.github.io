@@ -8,30 +8,30 @@
     <language>zh-cn</language>
     <lastBuildDate>Fri, 25 Feb 2022 13:43:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/categories/c++%E7%B3%BB%E5%88%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>C&#43;&#43;程序的编译过程（二）</title>
+      <link>https://svegeta.gitee.io/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%BA%8C/</link>
+      <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
+      
+      <guid>https://svegeta.gitee.io/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%BA%8C/</guid>
+      <description>C++源文件到可执行文件</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;程序的编译过程（一）</title>
+      <link>https://svegeta.gitee.io/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%B8%80/</link>
+      <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
+      
+      <guid>https://svegeta.gitee.io/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%B8%80/</guid>
+      <description>C++源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理</description>
+    </item>
+    
+    <item>
       <title>C&#43;&#43;系列文章链接合集</title>
       <link>https://svegeta.gitee.io/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</link>
       <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
       
       <guid>https://svegeta.gitee.io/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</guid>
       <description>引言 “为什么要学习C++？” 看到这篇文章的人，无论情愿与否，想必都已经决定要学习C++了。不管喜不喜欢C++，我们都必须承认C++是一门实用</description>
-    </item>
-    
-    <item>
-      <title>include与头文件</title>
-      <link>https://svegeta.gitee.io/cpp-series/include%E4%B8%8E%E5%A4%B4%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
-      
-      <guid>https://svegeta.gitee.io/cpp-series/include%E4%B8%8E%E5%A4%B4%E6%96%87%E4%BB%B6/</guid>
-      <description>include的作用</description>
-    </item>
-    
-    <item>
-      <title>从源文件到可执行文件</title>
-      <link>https://svegeta.gitee.io/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
-      
-      <guid>https://svegeta.gitee.io/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
-      <description>C++源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理</description>
     </item>
     
   </channel>

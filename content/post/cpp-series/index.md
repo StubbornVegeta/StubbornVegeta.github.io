@@ -42,5 +42,6 @@ categories:
 
 <!--[C++系列](https://svegeta.gitee.io/categories/c++%E7%B3%BB%E5%88%97/)-->
 
-[从源文件到可执行文件](/cpp-series/从源文件到可执行文件)
+[C++程序的编译过程（一）](/cpp-series/c++程序的编译过程一)
+[C++程序的编译过程（二）](/cpp-series/c++程序的编译过程二)
 

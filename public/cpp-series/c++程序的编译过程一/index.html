@@ -3,16 +3,16 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name="baidu-site-verification" content="code-N4HqDA2yr7" />
-<meta name="msvalidate.01" content="C30AE7336C0C214E141AC1AAC39A9A05" /><meta name='description' content='C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理'><title>从源文件到可执行文件</title>
+<meta name="msvalidate.01" content="C30AE7336C0C214E141AC1AAC39A9A05" /><meta name='description' content='C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理'><title>C&#43;&#43;程序的编译过程（一）</title>
 
-<link rel='canonical' href='https://svegeta.gitee.io/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/'>
+<link rel='canonical' href='https://svegeta.gitee.io/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%B8%80/'>
 
-<link rel="stylesheet" href="/scss/style.min.732a6bd9762caf6dce004132442f09bcd64101bf70fd8ab25f9c10d85d58f6b7.css"><meta property='og:title' content='从源文件到可执行文件'>
+<link rel="stylesheet" href="/scss/style.min.732a6bd9762caf6dce004132442f09bcd64101bf70fd8ab25f9c10d85d58f6b7.css"><meta property='og:title' content='C&#43;&#43;程序的编译过程（一）'>
 <meta property='og:description' content='C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理'>
-<meta property='og:url' content='https://svegeta.gitee.io/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/'>
+<meta property='og:url' content='https://svegeta.gitee.io/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%B8%80/'>
 <meta property='og:site_name' content='倔强的贝吉塔'>
 <meta property='og:type' content='article'><meta property='article:section' content='Cpp-Series' /><meta property='article:tag' content='C&#43;&#43;语法知识' /><meta property='article:published_time' content='2022-02-25T13:43:00&#43;08:00'/><meta property='article:modified_time' content='2022-02-25T13:43:00&#43;08:00'/><meta property='og:image' content='https://svegeta.gitee.io/cpp-blue-static.png' />
-<meta name="twitter:title" content="从源文件到可执行文件">
+<meta name="twitter:title" content="C&#43;&#43;程序的编译过程（一）">
 <meta name="twitter:description" content="C&#43;&#43;源文件到可执行文件通常要经过预处理、编译、汇编和链接四个过程。 *.cpp | &amp;lt;- 预处理 *.ii | &amp;lt;- 编译 *.s | &amp;lt;- 汇编 *.o / *.obj | &amp;lt;- 链接 *.out / *.exe 预处理 预处理主要处理"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://svegeta.gitee.io/cpp-blue-static.png' />
     <link rel="shortcut icon" href="/img/sorcerer.png" />
@@ -87,9 +87,9 @@ if (!doNotTrack) {
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">
+            <a href="/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%B8%80/">
                 
-                    <img src="/cpp-blue-static.png" loading="lazy" alt="Featured image of post 从源文件到可执行文件" />
+                    <img src="/cpp-blue-static.png" loading="lazy" alt="Featured image of post C&#43;&#43;程序的编译过程（一）" />
                 
             </a>
         </div>
@@ -107,7 +107,7 @@ if (!doNotTrack) {
     
 
     <h2 class="article-title">
-        <a href="/cpp-series/%E4%BB%8E%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">从源文件到可执行文件</a>
+        <a href="/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%B8%80/">C&#43;&#43;程序的编译过程（一）</a>
     </h2>
 
     
@@ -163,7 +163,7 @@ if (!doNotTrack) {
       | &lt;- 链接
 *.out / *.exe
 </code></pre><h2 id="预处理">预处理</h2>
-<p>预处理主要处理程序中的预处理指令，<code>#</code>开始的都叫做预处理指令，例如<code>#include</code>, <code>#define</code>等。如果你使用g++编译你的C++文件，你可以通过添加<code>-E</code>参数来使你的编译器在预处理完之后，不进行后续操作，从而得到预处理后的文件。</p>
+<p>预处理主要处理程序中的预处理指令，<code>#</code>开始的都叫做预处理指令，例如<code>#include</code>, <code>#define</code>等。如果你使用g++编译你的cpp文件，你可以通过添加<code>-E</code>参数来使你的编译器在预处理完之后，不进行后续操作，从而得到预处理后的文件。</p>
 <p>假设在你当前目录下存在以下三个文件：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="p">|</span>-- main.cpp
 </span></span><span class="line"><span class="cl"><span class="p">|</span>-- test.h
@@ -266,9 +266,9 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">	<span class="na">.size</span>	<span class="no">_Z4funcv</span><span class="p">,</span> <span class="no">.-_Z4funcv</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.ident</span>	<span class="s">&#34;GCC: (GNU) 11.1.0&#34;</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.section</span>	<span class="no">.note.GNU-stack</span><span class="p">,</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="na">@progbits</span>
-</span></span></code></pre></div><p>对于含有多个源文件的程序，g++会分别对每一个源文件执行编译操作。</p>
+</span></span></code></pre></div><p>g++输入参数中如果含有多个cpp文件，则分别对每一个cpp文件执行编译操作。</p>
 <h2 id="汇编">汇编</h2>
-<p>汇编会将汇编代码转换成机器码，也就是二进制的目标文件。你可以通过<code>g++ -c</code>来完成这步操作，也可以单独使用<code>as</code>指令来完成汇编过程。汇编过程会给每一个源文件产生一个目标文件。</p>
+<p>汇编会将汇编代码转换成机器码，也就是二进制的目标文件。你可以通过<code>g++ -c</code>来完成这步操作，也可以单独使用<code>as</code>指令来完成汇编过程。汇编过程会给每一个cpp文件产生一个目标文件。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">g++ -c main.s test.s
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 或者使用as</span>
@@ -326,7 +326,7 @@ if (!doNotTrack) {
                 
                     
 <article class="has-image">
-    <a href="/cpp-series/include%E4%B8%8E%E5%A4%B4%E6%96%87%E4%BB%B6/">
+    <a href="/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%BA%8C/">
         
         
             <div class="article-image">
@@ -337,7 +337,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">include与头文件</h2>
+            <h2 class="article-title">C&#43;&#43;程序的编译过程（二）</h2>
         </div>
     </a>
 </article>
