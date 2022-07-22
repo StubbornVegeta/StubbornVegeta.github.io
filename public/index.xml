@@ -6,7 +6,22 @@
         <description>Recent content on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 13 Mar 2022 20:57:05 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 23 Jul 2022 00:15:09 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MacOS下zsh终端brew无法补全</title>
+        <link>https://svegeta.gitee.io/p/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</link>
+        <pubDate>Sat, 23 Jul 2022 00:15:09 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/p/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</guid>
+        <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/.zsh/completions
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp /opt/homebrew/completions/zsh/_brew ~/.zsh/completions/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;.zshrc&lt;/code&gt;中添加：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;fpath&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;~/.zsh/completions &lt;span class=&#34;nv&#34;&gt;$fpath&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;autoload -Uz compinit &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; compinit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>CMake系列文章链接合集</title>
         <link>https://svegeta.gitee.io/p/cmake%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</link>
         <pubDate>Sat, 26 Feb 2022 13:43:00 +0800</pubDate>

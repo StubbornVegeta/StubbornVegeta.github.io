@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on 倔强的贝吉塔</title>
-    <link>https://svegeta.gitee.io/tags/</link>
-    <description>Recent content in Tags on 倔强的贝吉塔</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Feb 2022 13:43:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>C&#43;&#43;语法知识</title>
-      <link>https://svegeta.gitee.io/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</link>
-      <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
-      
-      <guid>https://svegeta.gitee.io/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Tags on 倔强的贝吉塔</title>
+        <link>https://svegeta.gitee.io/tags/</link>
+        <description>Recent content in Tags on 倔强的贝吉塔</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 23 Jul 2022 00:15:09 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MacOS</title>
+        <link>https://svegeta.gitee.io/tags/macos/</link>
+        <pubDate>Sat, 23 Jul 2022 00:15:09 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/tags/macos/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>zsh</title>
+        <link>https://svegeta.gitee.io/tags/zsh/</link>
+        <pubDate>Sat, 23 Jul 2022 00:15:09 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/tags/zsh/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>C&#43;&#43;语法知识</title>
+        <link>https://svegeta.gitee.io/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</link>
+        <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>

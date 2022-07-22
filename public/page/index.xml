@@ -1,38 +1,76 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pages on 倔强的贝吉塔</title>
-    <link>https://svegeta.gitee.io/page/</link>
-    <description>Recent content in Pages on 倔强的贝吉塔</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 13 Mar 2022 20:57:05 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/page/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Search</title>
-      <link>https://svegeta.gitee.io/search/</link>
-      <pubDate>Sun, 13 Mar 2022 20:57:05 +0800</pubDate>
-      
-      <guid>https://svegeta.gitee.io/search/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>博主信息</title>
-      <link>https://svegeta.gitee.io/user/</link>
-      <pubDate>Sun, 13 Mar 2022 19:06:32 +0800</pubDate>
-      
-      <guid>https://svegeta.gitee.io/user/</guid>
-      <description>一张待添加的简历</description>
-    </item>
-    
-    <item>
-      <title>『倔强的贝吉塔』的关注</title>
-      <link>https://svegeta.gitee.io/following/</link>
-      <pubDate>Sun, 13 Mar 2022 17:50:10 +0800</pubDate>
-      
-      <guid>https://svegeta.gitee.io/following/</guid>
-      <description>张小飞_WPS WPS for Linux 开发者 skykey C&amp;#43;&amp;#43;/Qt 程序员 bisqwit 超神的大巴司机</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Pages on 倔强的贝吉塔</title>
+        <link>https://svegeta.gitee.io/page/</link>
+        <description>Recent content in Pages on 倔强的贝吉塔</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 13 Mar 2022 20:57:05 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Search</title>
+        <link>https://svegeta.gitee.io/search/</link>
+        <pubDate>Sun, 13 Mar 2022 20:57:05 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>博主信息</title>
+        <link>https://svegeta.gitee.io/user/</link>
+        <pubDate>Sun, 13 Mar 2022 19:06:32 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/user/</guid>
+        <description>&lt;h2 id=&#34;一张待添加的简历&#34;&gt;一张待添加的简历&lt;/h2&gt;
+</description>
+        </item>
+        <item>
+        <title>『倔强的贝吉塔』的关注</title>
+        <link>https://svegeta.gitee.io/following/</link>
+        <pubDate>Sun, 13 Mar 2022 17:50:10 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/following/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cryfeifei.cn/&#34; title=&#34;张小飞_WPS&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://www.cryfeifei.cn/medias/avatar.jpg class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;张小飞_WPS&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;WPS for Linux 开发者&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://skykeyjoker.com/&#34; title=&#34;skykey&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://skykeyjoker.com/images/avatar.jpg class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;skykey&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;C&amp;#43;&amp;#43;/Qt 程序员&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;http://iki.fi/bisqwit/&#34; title=&#34;bisqwit&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://yt3.ggpht.com/ytc/AKedOLTfNDwZmsCoXTC0x8GGCbSwxfPE5ES9d_5fA1Xe_Q&amp;#61;s88-c-k-c0x00ffffff-no-rj class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;bisqwit&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;超神的大巴司机&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

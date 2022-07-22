@@ -41,7 +41,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: 等我确定职业再来补充
+        subtitle: ai架构 / parameter server
         avatar:
             enabled: true
             local: true
