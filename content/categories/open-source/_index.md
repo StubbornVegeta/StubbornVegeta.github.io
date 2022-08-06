@@ -1,5 +1,5 @@
 ---
 title: "open-source"
-image: "open-source.png"
+image: "opensource.png"
 description: "开源工具"
 ---
