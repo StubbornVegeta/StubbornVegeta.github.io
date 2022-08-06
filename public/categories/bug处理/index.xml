@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>bug处理 on 倔强的贝吉塔</title>
+        <link>https://svegeta.gitee.io/categories/bug%E5%A4%84%E7%90%86/</link>
+        <description>Recent content in bug处理 on 倔强的贝吉塔</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 23 Jul 2022 13:43:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/categories/bug%E5%A4%84%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>clean bug</title>
+        <link>https://svegeta.gitee.io/p/clean-bug/</link>
+        <pubDate>Sat, 23 Jul 2022 13:43:00 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/p/clean-bug/</guid>
+        <description>&lt;img src="https://svegeta.gitee.io/p/clean-bug/bug.png" alt="Featured image of post clean bug" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/MacOS%e4%b8%8bzsh%e7%bb%88%e7%ab%afbrew%e6%97%a0%e6%b3%95%e8%a1%a5%e5%85%a8&#34; &gt;MacOS下zsh终端brew无法补全&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

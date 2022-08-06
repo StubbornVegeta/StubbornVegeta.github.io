@@ -41,7 +41,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: ai架构 / parameter server
+        subtitle: AI 架构 / 分布式
         avatar:
             enabled: true
             local: true

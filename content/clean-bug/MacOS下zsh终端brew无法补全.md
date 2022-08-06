@@ -8,7 +8,6 @@ tags:
     - zsh
 ---
 ```bash
-
 mkdir -p ~/.zsh/completions
 
 cp /opt/homebrew/completions/zsh/_brew ~/.zsh/completions/
