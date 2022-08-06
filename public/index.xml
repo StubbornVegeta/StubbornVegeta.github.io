@@ -6,7 +6,17 @@
         <description>Recent content on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 06 Aug 2022 13:43:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Aug 2022 22:12:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>TensorFlow系列</title>
+        <link>https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/</link>
+        <pubDate>Sat, 06 Aug 2022 21:57:00 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/</guid>
+        <description>&lt;img src="https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/tensorflow.png" alt="Featured image of post TensorFlow系列" /&gt;&lt;h3 id=&#34;tensorflow1x&#34;&gt;tensorflow1.x&lt;/h3&gt;
+&lt;h3 id=&#34;tensorflow2x&#34;&gt;tensorflow2.x&lt;/h3&gt;
+</description>
+        </item>
+        <item>
         <title>开源系列</title>
         <link>https://svegeta.gitee.io/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/</link>
         <pubDate>Sat, 06 Aug 2022 13:43:00 +0800</pubDate>
@@ -22,16 +32,6 @@
         
         <guid>https://svegeta.gitee.io/p/bug%E5%A4%84%E7%90%86/</guid>
         <description>&lt;img src="https://svegeta.gitee.io/p/bug%E5%A4%84%E7%90%86/bug.png" alt="Featured image of post bug处理" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/macos%e4%b8%8bzsh%e7%bb%88%e7%ab%afbrew%e6%97%a0%e6%b3%95%e8%a1%a5%e5%85%a8&#34; &gt;MacOS下zsh终端brew无法补全&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>CMake系列文章链接合集</title>
-        <link>https://svegeta.gitee.io/p/cmake%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</link>
-        <pubDate>Sat, 26 Feb 2022 13:43:00 +0800</pubDate>
-        
-        <guid>https://svegeta.gitee.io/p/cmake%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/p/cmake%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/CMake.png" alt="Featured image of post CMake系列文章链接合集" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/categories/cmake%E7%B3%BB%E5%88%97/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;CMake系列&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

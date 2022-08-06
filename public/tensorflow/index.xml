@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tensorflows on 倔强的贝吉塔</title>
+        <link>https://svegeta.gitee.io/tensorflow/</link>
+        <description>Recent content in Tensorflows on 倔强的贝吉塔</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 06 Aug 2022 22:12:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tensorflow/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>tensorflow新建op (cpp) </title>
+        <link>https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp/</link>
+        <pubDate>Sat, 06 Aug 2022 22:12:00 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp/</guid>
+        <description>&lt;img src="https://svegeta.gitee.io/tensorflow/tensorflow.png" alt="Featured image of post tensorflow新建op (cpp) " /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
