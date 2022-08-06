@@ -6,7 +6,15 @@
         <description>Recent content in Tags on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 23 Jul 2022 00:15:09 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Aug 2022 13:43:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Neovim插件</title>
+        <link>https://svegeta.gitee.io/tags/neovim%E6%8F%92%E4%BB%B6/</link>
+        <pubDate>Sat, 06 Aug 2022 13:43:00 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/tags/neovim%E6%8F%92%E4%BB%B6/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>MacOS</title>
         <link>https://svegeta.gitee.io/tags/macos/</link>
         <pubDate>Sat, 23 Jul 2022 00:15:09 +0800</pubDate>
