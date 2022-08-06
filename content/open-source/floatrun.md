@@ -1,7 +1,7 @@
 ---
 title: "FloatRun —— 在浮动窗口中运行代码（最小化Neovim插件）"
 date: 2022-08-06T13:43:00+08:00
-image: "opensource.png"
+image: "/open-source/opensource.png"
 categories:
     - open-source
 tags:

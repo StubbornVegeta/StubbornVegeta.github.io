@@ -12,7 +12,7 @@
         <pubDate>Sat, 06 Aug 2022 13:43:00 +0800</pubDate>
         
         <guid>https://svegeta.gitee.io/open-source/floatrun/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/opensource.png" alt="Featured image of post FloatRun —— 在浮动窗口中运行代码（最小化Neovim插件）" /&gt;&lt;h2 id=&#34;floatrun&#34;&gt;FloatRun&lt;/h2&gt;
+        <description>&lt;img src="https://svegeta.gitee.io/open-source/opensource.png" alt="Featured image of post FloatRun —— 在浮动窗口中运行代码（最小化Neovim插件）" /&gt;&lt;h2 id=&#34;floatrun&#34;&gt;FloatRun&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;FloatRun&lt;/code&gt; 是一个能够让你在浮动窗口中运行代码的最小化Neovim插件.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/StubbornVegeta/FloatRun&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;figure 
