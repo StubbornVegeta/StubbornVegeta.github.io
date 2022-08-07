@@ -12,7 +12,7 @@
         <pubDate>Sat, 23 Jul 2022 00:15:09 +0800</pubDate>
         
         <guid>https://svegeta.gitee.io/clean-bug/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</guid>
-        <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/.zsh/completions
+        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post MacOS下zsh终端brew无法补全" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/.zsh/completions
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp /opt/homebrew/completions/zsh/_brew ~/.zsh/completions/
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;.zshrc&lt;/code&gt;中添加：&lt;/p&gt;

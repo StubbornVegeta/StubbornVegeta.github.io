@@ -6,15 +6,15 @@
         <description>Recent content on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 06 Aug 2022 22:12:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 07 Aug 2022 15:22:41 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>TensorFlow系列</title>
         <link>https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/</link>
         <pubDate>Sat, 06 Aug 2022 21:57:00 +0800</pubDate>
         
         <guid>https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/tensorflow.png" alt="Featured image of post TensorFlow系列" /&gt;&lt;h3 id=&#34;tensorflow1x&#34;&gt;tensorflow1.x&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp&#34; &gt;tensorflow新建op (cpp)&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;tensorflow2x&#34;&gt;tensorflow2.x&lt;/h3&gt;
+        <description>&lt;img src="https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/tensorflow.png" alt="Featured image of post TensorFlow系列" /&gt;&lt;h2 id=&#34;tensorflow1x&#34;&gt;TensorFlow1.x&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp&#34; &gt;TensorFlow新建op (cpp)&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tensorflow2x&#34;&gt;TensorFlow2.x&lt;/h2&gt;
 </description>
         </item>
         <item>
@@ -27,12 +27,12 @@
 </description>
         </item>
         <item>
-        <title>bug处理</title>
-        <link>https://svegeta.gitee.io/p/bug%E5%A4%84%E7%90%86/</link>
+        <title>日常记录与bug处理</title>
+        <link>https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</link>
         <pubDate>Sat, 23 Jul 2022 13:43:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/p/bug%E5%A4%84%E7%90%86/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/p/bug%E5%A4%84%E7%90%86/bug.png" alt="Featured image of post bug处理" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/macos%e4%b8%8bzsh%e7%bb%88%e7%ab%afbrew%e6%97%a0%e6%b3%95%e8%a1%a5%e5%85%a8&#34; &gt;MacOS下zsh终端brew无法补全&lt;/a&gt;&lt;/p&gt;
+        <guid>https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</guid>
+        <description>&lt;img src="https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug.png" alt="Featured image of post 日常记录与bug处理" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/macos%e4%b8%8bzsh%e7%bb%88%e7%ab%afbrew%e6%97%a0%e6%b3%95%e8%a1%a5%e5%85%a8&#34; &gt;MacOS下zsh终端brew无法补全&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

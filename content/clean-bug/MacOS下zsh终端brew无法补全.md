@@ -1,6 +1,7 @@
 ---
 title: "MacOS下zsh终端brew无法补全"
 date: 2022-07-23T00:15:09+08:00
+image: "/categories/clean-bug/bug.png"
 categories:
     - clean-bug
 tags:
@@ -17,6 +18,4 @@ cp /opt/homebrew/completions/zsh/_brew ~/.zsh/completions/
 fpath=(~/.zsh/completions $fpath)
 autoload -Uz compinit && compinit
 ```
-
-
 

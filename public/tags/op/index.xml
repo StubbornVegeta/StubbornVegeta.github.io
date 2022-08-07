@@ -12,7 +12,20 @@
         <pubDate>Sat, 06 Aug 2022 22:12:00 +0800</pubDate>
         
         <guid>https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/categories/tensorflow/tensorflow.png" alt="Featured image of post tensorflow新建op (cpp) " /&gt;</description>
+        <description>&lt;img src="https://svegeta.gitee.io/categories/tensorflow/tensorflow.png" alt="Featured image of post tensorflow新建op (cpp) " /&gt;&lt;h2 id=&#34;为什么使用cpp新建op&#34;&gt;为什么使用cpp新建op&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;一些操作表示成现有操作的组合不好实现或者无法实现。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;已有操作的组合效率不高。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;想要自定义一些基本操作的组合，因为未来编译器做这种融合可能会比较困难。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何使用cpp新建op&#34;&gt;如何使用cpp新建op&lt;/h2&gt;
+</description>
         </item>
         
     </channel>
