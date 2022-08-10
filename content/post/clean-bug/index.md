@@ -6,3 +6,5 @@ categories:
     - clean-bug
 ---
 [MacOS下zsh终端brew无法补全](/clean-bug/macos下zsh终端brew无法补全)
+
+[wsl2下docker启动问题](/clean-bug/wsl2下docker启动问题)

@@ -3,17 +3,18 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name="baidu-site-verification" content="code-N4HqDA2yr7" />
-<meta name="msvalidate.01" content="C30AE7336C0C214E141AC1AAC39A9A05" /><meta name='description' content='问题描述 通常我们使用systemctl start docker来启动docker，但Wsl2下没有systemctl命令。 问题解决 下载Docker De'><title>wsl2下docker启动问题</title>
+<meta name="msvalidate.01" content="C30AE7336C0C214E141AC1AAC39A9A05" /><meta name='description' content='问题描述 通常我们使用systemctl start docker来启动docker，但Wsl2下没有systemctl命令。 问题解决 下载Docker Desktop ['><title>wsl2下docker启动问题</title>
 
 <link rel='canonical' href='https://svegeta.gitee.io/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/'>
 
 <link rel="stylesheet" href="/scss/style.min.732a6bd9762caf6dce004132442f09bcd64101bf70fd8ab25f9c10d85d58f6b7.css"><meta property='og:title' content='wsl2下docker启动问题'>
-<meta property='og:description' content='问题描述 通常我们使用systemctl start docker来启动docker，但Wsl2下没有systemctl命令。 问题解决 下载Docker De'>
+<meta property='og:description' content='问题描述 通常我们使用systemctl start docker来启动docker，但Wsl2下没有systemctl命令。 问题解决 下载Docker Desktop ['>
 <meta property='og:url' content='https://svegeta.gitee.io/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/'>
 <meta property='og:site_name' content='倔强的贝吉塔'>
-<meta property='og:type' content='article'><meta property='article:section' content='Clean-Bug' /><meta property='article:tag' content='docker' /><meta property='article:tag' content='wsl2' /><meta property='article:published_time' content='2022-08-07T15:22:41&#43;08:00'/><meta property='article:modified_time' content='2022-08-07T15:22:41&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Clean-Bug' /><meta property='article:tag' content='日常记录' /><meta property='article:tag' content='docker' /><meta property='article:tag' content='wsl2' /><meta property='article:published_time' content='2022-08-07T15:22:41&#43;08:00'/><meta property='article:modified_time' content='2022-08-07T15:22:41&#43;08:00'/><meta property='og:image' content='https://svegeta.gitee.io/categories/clean-bug/bug.png' />
 <meta name="twitter:title" content="wsl2下docker启动问题">
-<meta name="twitter:description" content="问题描述 通常我们使用systemctl start docker来启动docker，但Wsl2下没有systemctl命令。 问题解决 下载Docker De">
+<meta name="twitter:description" content="问题描述 通常我们使用systemctl start docker来启动docker，但Wsl2下没有systemctl命令。 问题解决 下载Docker Desktop ["><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://svegeta.gitee.io/categories/clean-bug/bug.png' />
     <link rel="shortcut icon" href="/img/sorcerer.png" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4H6ZTRWB4"></script>
@@ -83,8 +84,16 @@ if (!doNotTrack) {
         </div>
     
 <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/">
+                
+                    <img src="/categories/clean-bug/bug.png" loading="lazy" alt="Featured image of post wsl2下docker启动问题" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
@@ -146,9 +155,9 @@ if (!doNotTrack) {
     <h2 id="问题描述">问题描述</h2>
 <p>通常我们使用<code>systemctl start docker</code>来启动docker，但Wsl2下没有<code>systemctl</code>命令。</p>
 <h2 id="问题解决">问题解决</h2>
-<p>下载Docker Desktop：<a class="link" href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe"  target="_blank" rel="noopener"
+<p>下载Docker Desktop [win]：<a class="link" href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe"  target="_blank" rel="noopener"
     >https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe</a></p>
-<p>选择需要的wsl linux发行版，然后点击<code>Apply &amp; Restart</code></p>
+<p>选择需要的wsl linux发行版（Settings&gt;Resources&gt;WSL Integration），然后点击<code>Apply &amp; Restart</code></p>
 <p><figure 
 	>
 	<a href="https://github.com/StubbornVegeta/imgsite/raw/main/docker_wsl_setting.png" >
@@ -173,6 +182,8 @@ if (!doNotTrack) {
     <footer class="article-footer">
     
     <section class="article-tags">
+        
+            <a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录</a>
         
             <a href="/tags/docker/">docker</a>
         
