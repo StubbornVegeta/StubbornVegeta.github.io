@@ -3,18 +3,18 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name="baidu-site-verification" content="code-N4HqDA2yr7" />
-<meta name="msvalidate.01" content="C30AE7336C0C214E141AC1AAC39A9A05" /><meta name='description' content='MacOS下zsh终端brew无法补全 wsl2下docker启动问题 以非root身份执行docker'><title>日常记录与bug处理</title>
+<meta name="msvalidate.01" content="C30AE7336C0C214E141AC1AAC39A9A05" /><meta name='description' content='问题描述 Linux新建用户发现执行docker命令需要root权限。 问题解决 添加docker组 sudo groupadd docker 这一步可能在安装docker的时候就已经'><title>以非root身份执行docker</title>
 
-<link rel='canonical' href='https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/'>
+<link rel='canonical' href='https://svegeta.gitee.io/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/'>
 
-<link rel="stylesheet" href="/scss/style.min.732a6bd9762caf6dce004132442f09bcd64101bf70fd8ab25f9c10d85d58f6b7.css"><meta property='og:title' content='日常记录与bug处理'>
-<meta property='og:description' content='MacOS下zsh终端brew无法补全 wsl2下docker启动问题 以非root身份执行docker'>
-<meta property='og:url' content='https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/'>
+<link rel="stylesheet" href="/scss/style.min.732a6bd9762caf6dce004132442f09bcd64101bf70fd8ab25f9c10d85d58f6b7.css"><meta property='og:title' content='以非root身份执行docker'>
+<meta property='og:description' content='问题描述 Linux新建用户发现执行docker命令需要root权限。 问题解决 添加docker组 sudo groupadd docker 这一步可能在安装docker的时候就已经'>
+<meta property='og:url' content='https://svegeta.gitee.io/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/'>
 <meta property='og:site_name' content='倔强的贝吉塔'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-07-23T13:43:00&#43;08:00'/><meta property='article:modified_time' content='2022-07-23T13:43:00&#43;08:00'/><meta property='og:image' content='https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug.png' />
-<meta name="twitter:title" content="日常记录与bug处理">
-<meta name="twitter:description" content="MacOS下zsh终端brew无法补全 wsl2下docker启动问题 以非root身份执行docker"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Clean-Bug' /><meta property='article:tag' content='日常记录' /><meta property='article:tag' content='docker' /><meta property='og:image' content='https://svegeta.gitee.io/categories/clean-bug/bug.png' />
+<meta name="twitter:title" content="以非root身份执行docker">
+<meta name="twitter:description" content="问题描述 Linux新建用户发现执行docker命令需要root权限。 问题解决 添加docker组 sudo groupadd docker 这一步可能在安装docker的时候就已经"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://svegeta.gitee.io/categories/clean-bug/bug.png' />
     <link rel="shortcut icon" href="/img/sorcerer.png" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4H6ZTRWB4"></script>
@@ -40,7 +40,7 @@ if (!doNotTrack) {
 
     </head>
     <body class="
-    article-page 
+    article-page has-toc
 ">
     <script>
         (function() {
@@ -66,201 +66,30 @@ if (!doNotTrack) {
 </script>
 <div class="container main-container flex 
     
-        on-phone--column extended
+        extended
     
 ">
     
-        <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header class="site-info">
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/header_hu56783fe7a6d3fa0c826cc7642e3eca58_16701_300x0_resize_q75_box.jpg" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <h1 class="site-name"><a href="/">倔强的贝吉塔</a></h1>
-        <h2 class="site-description">AI 架构 / 分布式</h2><ol class="social-menu">
-                
-                    <li>
-                        <a 
-                            href='https://github.com/StubbornVegeta'
-                            target="_blank"
-                            title="GitHub"
-                        >
-                            
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a 
-                            href='mailto:vegetaking@126.com'
-                            target="_blank"
-                            title="邮箱"
-                        >
-                            
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
-  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+  <polyline points="15 6 9 12 15 18" />
 </svg>
 
 
 
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a 
-                            href='/user'
-                            target="_blank"
-                            title="博主信息"
-                        >
-                            
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                            
-                        </a>
-                    </li>
-                
-            </ol></header>
-
-    <ol class="menu" id="main-menu">
-        
-        
-        
-
-        <li >
-            <a href='/' target="_blank">
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>主页</span>
+                <span>返回</span>
             </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/following' target="_blank">
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-</svg>
-
-
-
-                
-                <span>关注</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/search' target="_blank">
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>搜索</span>
-            </a>
-        </li>
-        
-
-        
-            <li id="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <span>暗色模式</span>
-            </li>
-        
-    </ol>
-</aside>
-
+        </div>
     
 <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/">
-                <img src="/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug_hu081a353cc6bb62ce4c97494e3c8ce280_27096_800x0_resize_box_3.png"
-                        srcset="/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug_hu081a353cc6bb62ce4c97494e3c8ce280_27096_800x0_resize_box_3.png 800w, /p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug_hu081a353cc6bb62ce4c97494e3c8ce280_27096_1600x0_resize_box_3.png 1600w"
-                        width="800" 
-                        height="409" 
-                        loading="lazy"
-                        alt="Featured image of post 日常记录与bug处理" />
+            <a href="/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/">
+                
+                    <img src="/categories/clean-bug/bug.png" loading="lazy" alt="Featured image of post 以非root身份执行docker" />
                 
             </a>
         </div>
@@ -278,26 +107,13 @@ if (!doNotTrack) {
     
 
     <h2 class="article-title">
-        <a href="/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/">日常记录与bug处理</a>
+        <a href="/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/">以非root身份执行docker</a>
     </h2>
 
     
 
     
     <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">2022-07-23</time>
-            </div>
         
 
         
@@ -323,15 +139,30 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <p><a class="link" href="/clean-bug/macos%e4%b8%8bzsh%e7%bb%88%e7%ab%afbrew%e6%97%a0%e6%b3%95%e8%a1%a5%e5%85%a8" >MacOS下zsh终端brew无法补全</a></p>
-<p><a class="link" href="/clean-bug/wsl2%e4%b8%8bdocker%e5%90%af%e5%8a%a8%e9%97%ae%e9%a2%98" >wsl2下docker启动问题</a></p>
-<p><a class="link" href="/clean-bug/%e4%bb%a5%e9%9d%9eroot%e8%ba%ab%e4%bb%bd%e6%89%a7%e8%a1%8cdocker" >以非root身份执行docker</a></p>
-
+    <h2 id="问题描述">问题描述</h2>
+<p>Linux新建用户发现执行docker命令需要root权限。</p>
+<h2 id="问题解决">问题解决</h2>
+<h3 id="添加docker组">添加docker组</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo groupadd docker
+</span></span></code></pre></div><p>这一步可能在安装docker的时候就已经添加完成了</p>
+<h3 id="给docker组添加用户">给docker组添加用户</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo usermod –aG docker <span class="nv">$USER</span>
+</span></span></code></pre></div><h3 id="刷新当前会话">刷新当前会话</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">newgrp docker
+</span></span></code></pre></div>
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录</a>
+        
+            <a href="/tags/docker/">docker</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -380,6 +211,29 @@ if (!doNotTrack) {
                 
                     
 <article class="has-image">
+    <a href="/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug.0eb81f4fc2c6c306c0254759192da7f4_hu081a353cc6bb62ce4c97494e3c8ce280_27096_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 日常记录与bug处理"
+                        
+                        data-hash="md5-DrgfT8LGwwbAJUdZGS2n9A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">日常记录与bug处理</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
     <a href="/clean-bug/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/">
         
         
@@ -392,24 +246,6 @@ if (!doNotTrack) {
 
         <div class="article-details">
             <h2 class="article-title">MacOS下zsh终端brew无法补全</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="has-image">
-    <a href="/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/categories/clean-bug/bug.png" loading="lazy" data-key="" data-hash="/categories/clean-bug/bug.png"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">以非root身份执行docker</h2>
         </div>
     </a>
 </article>
@@ -898,6 +734,39 @@ if (!doNotTrack) {
             >
 
             </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#问题描述">问题描述</a></li>
+    <li><a href="#问题解决">问题解决</a>
+      <ol>
+        <li><a href="#添加docker组">添加docker组</a></li>
+        <li><a href="#给docker组添加用户">给docker组添加用户</a></li>
+        <li><a href="#刷新当前会话">刷新当前会话</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
     
 
         </div>

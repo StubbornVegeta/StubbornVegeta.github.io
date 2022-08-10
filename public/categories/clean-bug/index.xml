@@ -45,6 +45,7 @@
         <guid>https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</guid>
         <description>&lt;img src="https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug.png" alt="Featured image of post 日常记录与bug处理" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/macos%e4%b8%8bzsh%e7%bb%88%e7%ab%afbrew%e6%97%a0%e6%b3%95%e8%a1%a5%e5%85%a8&#34; &gt;MacOS下zsh终端brew无法补全&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/wsl2%e4%b8%8bdocker%e5%90%af%e5%8a%a8%e9%97%ae%e9%a2%98&#34; &gt;wsl2下docker启动问题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/%e4%bb%a5%e9%9d%9eroot%e8%ba%ab%e4%bb%bd%e6%89%a7%e8%a1%8cdocker&#34; &gt;以非root身份执行docker&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -59,6 +60,24 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;.zshrc&lt;/code&gt;中添加：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;fpath&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;~/.zsh/completions &lt;span class=&#34;nv&#34;&gt;$fpath&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;autoload -Uz compinit &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; compinit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>以非root身份执行docker</title>
+        <link>https://svegeta.gitee.io/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://svegeta.gitee.io/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</guid>
+        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post 以非root身份执行docker" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;Linux新建用户发现执行docker命令需要root权限。&lt;/p&gt;
+&lt;h2 id=&#34;问题解决&#34;&gt;问题解决&lt;/h2&gt;
+&lt;h3 id=&#34;添加docker组&#34;&gt;添加docker组&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo groupadd docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这一步可能在安装docker的时候就已经添加完成了&lt;/p&gt;
+&lt;h3 id=&#34;给docker组添加用户&#34;&gt;给docker组添加用户&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo usermod –aG docker &lt;span class=&#34;nv&#34;&gt;$USER&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;刷新当前会话&#34;&gt;刷新当前会话&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;newgrp docker
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         
