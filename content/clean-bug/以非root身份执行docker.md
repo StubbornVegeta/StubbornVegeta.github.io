@@ -1,6 +1,6 @@
 ---
 title: "以非root身份执行docker"
-date: 2022-08-09T22:41:41+08:00
+date: 2022-08-09T00:41:41+08:00
 image: "/categories/clean-bug/bug.png"
 categories:
     - clean-bug
