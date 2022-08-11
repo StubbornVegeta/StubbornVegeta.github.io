@@ -6,12 +6,20 @@
         <description>Recent content in Tags on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 07 Aug 2022 15:22:41 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 10 Aug 2022 22:41:41 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>docker</title>
         <link>https://svegeta.gitee.io/tags/docker/</link>
-        <pubDate>Sun, 07 Aug 2022 15:22:41 +0800</pubDate>
+        <pubDate>Wed, 10 Aug 2022 22:41:41 +0800</pubDate>
         
         <guid>https://svegeta.gitee.io/tags/docker/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>日常记录</title>
+        <link>https://svegeta.gitee.io/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+        <pubDate>Wed, 10 Aug 2022 22:41:41 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
         <description></description>
         </item>
         <item>
@@ -20,14 +28,6 @@
         <pubDate>Sun, 07 Aug 2022 15:22:41 +0800</pubDate>
         
         <guid>https://svegeta.gitee.io/tags/wsl2/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>日常记录</title>
-        <link>https://svegeta.gitee.io/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
-        <pubDate>Sun, 07 Aug 2022 15:22:41 +0800</pubDate>
-        
-        <guid>https://svegeta.gitee.io/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
         <description></description>
         </item>
         <item>
