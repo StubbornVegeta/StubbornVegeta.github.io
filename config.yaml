@@ -48,7 +48,7 @@ params:
             src: img/header.jpg
 
     article:
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:
