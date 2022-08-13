@@ -11,3 +11,5 @@ categories:
 
 [以非root身份执行docker](/clean-bug/以非root身份执行docker)
 
+[ssh登录环境变量不生效](/clean-bug/ssh登录环境变量不生效)
+
