@@ -6,7 +6,27 @@
         <description>Recent content in Clean-bugs on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 10 Aug 2022 22:41:41 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/clean-bug/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 13 Aug 2022 15:31:11 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/clean-bug/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>ssh登录环境变量不生效</title>
+        <link>https://svegeta.gitee.io/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</link>
+        <pubDate>Sat, 13 Aug 2022 15:31:11 +0800</pubDate>
+        
+        <guid>https://svegeta.gitee.io/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
+        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post ssh登录环境变量不生效" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;ssh登录服务器，环境变量不生效（一些命令找不到，即使已经写入了bashrc）&lt;/p&gt;
+&lt;h2 id=&#34;问题解决&#34;&gt;问题解决&lt;/h2&gt;
+&lt;p&gt;ssh登录服务器时，有时不会执行&lt;code&gt;.bashrc&lt;/code&gt;，而是执行&lt;code&gt;.bash_profile&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;只需要添加&lt;code&gt;.bash_profile&lt;/code&gt;文件即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; -n &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$BASH_VERSION&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# include .bashrc if it exists&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; -f &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/.bashrc&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        . &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/.bashrc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;环境变量依然写在&lt;code&gt;.bashrc&lt;/code&gt;中即可&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>以非root身份执行docker</title>
         <link>https://svegeta.gitee.io/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</link>
         <pubDate>Wed, 10 Aug 2022 22:41:41 +0800</pubDate>
