@@ -23,4 +23,4 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 ```
-环境变量依然写在`.bashrc`中即可
+环境变量依然写在`.bashrc`中
