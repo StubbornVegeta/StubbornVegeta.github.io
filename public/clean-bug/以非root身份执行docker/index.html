@@ -162,7 +162,10 @@ if (!doNotTrack) {
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo usermod –aG docker <span class="nv">$USER</span>
 </span></span></code></pre></div><h3 id="刷新当前会话">刷新当前会话</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">newgrp docker
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>也可以直接编辑<code>/etc/group</code>文件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vi /etc/group
+</span></span></code></pre></div><p>在<code>docker</code>组后面直接添加用户名</p>
+
 </section>
 
 

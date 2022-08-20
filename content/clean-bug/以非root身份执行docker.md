@@ -32,3 +32,9 @@ sudo usermod –aG docker $USER
 ```bash
 newgrp docker
 ```
+
+也可以直接编辑`/etc/group`文件
+```bash
+sudo vi /etc/group
+```
+在`docker`组后面直接添加用户名
