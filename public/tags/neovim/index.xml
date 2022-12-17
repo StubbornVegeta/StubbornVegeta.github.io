@@ -30,8 +30,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure 
 	&gt;
-	&lt;a href=&#34;https://gitee.com/svegeta/screenshot/raw/master/ChoiceNode.gif&#34; &gt;
-		&lt;img src=&#34;https://gitee.com/svegeta/screenshot/raw/master/ChoiceNode.gif&#34;
+	&lt;a href=&#34;https://svegeta.gitee.io/img/luasnip-img/ChoiceNode.gif&#34; &gt;
+		&lt;img src=&#34;https://svegeta.gitee.io/img/luasnip-img/ChoiceNode.gif&#34;
 			
 			
 			
@@ -40,6 +40,48 @@
 	&lt;/a&gt;
 	
 	&lt;figcaption&gt;ChoiceNode&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://svegeta.gitee.io/img/luasnip-img/visual.gif&#34; &gt;
+		&lt;img src=&#34;https://svegeta.gitee.io/img/luasnip-img/visual.gif&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;visual&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;visual&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://svegeta.gitee.io/img/luasnip-img/DynamicNode.gif&#34; &gt;
+		&lt;img src=&#34;https://svegeta.gitee.io/img/luasnip-img/DynamicNode.gif&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;DynamicNode&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;DynamicNode&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://svegeta.gitee.io/img/luasnip-img/autotrig.gif&#34; &gt;
+		&lt;img src=&#34;https://svegeta.gitee.io/img/luasnip-img/autotrig.gif&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;autotrig&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;autotrig&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;luasnip代码片段的基本形式&#34;&gt;LuaSnip代码片段的基本形式&lt;/h2&gt;

@@ -31,9 +31,9 @@ tags:
 
 
 ![ChoiceNode](/img/luasnip-img/ChoiceNode.gif)
-![ChoiceNode](/img/luasnip-img/visual.gif)
-![ChoiceNode](/img/luasnip-img/DynamicNode.gif)
-![ChoiceNode](/img/luasnip-img/autotrig.gif)
+![visual](/img/luasnip-img/visual.gif)
+![DynamicNode](/img/luasnip-img/DynamicNode.gif)
+![autotrig](/img/luasnip-img/autotrig.gif)
 
 
 
