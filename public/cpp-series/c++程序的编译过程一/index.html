@@ -211,8 +211,8 @@ if (!doNotTrack) {
 <p>编译过程会将经过预处理之后的程序转换成特定汇编代码，通常可以使用<code>g++ -S</code>将源代码直接转换为汇编代码：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">g++ -S main.cpp test.cpp
 </span></span></code></pre></div><p>执行上述语句你将得到<code>main.s</code>和<code>test.s</code>两个文件：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="line"><span class="cl"><span class="c">; ********** main.s **********
-</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="na">.file</span>	<span class="s">&#34;main.cpp&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="line"><span class="cl"><span class="c1">; ********** main.s **********
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="na">.file</span>	<span class="s">&#34;main.cpp&#34;</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.text</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.globl</span>	<span class="no">main</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.type</span>	<span class="no">main</span><span class="p">,</span> <span class="na">@function</span>
@@ -225,15 +225,15 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">	<span class="nf">movq</span>	<span class="nv">%rsp</span><span class="p">,</span> <span class="nv">%rbp</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.cfi_def_cfa_register</span> <span class="mi">6</span>
 </span></span><span class="line"><span class="cl">	<span class="nf">call</span>	<span class="no">_Z4funcv@PLT</span>
-</span></span><span class="line"><span class="cl"><span class="c">#APP
-</span></span></span><span class="line"><span class="cl"><span class="c"># 5 &#34;main.cpp&#34; 1
-</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="nf">movq</span> <span class="no">$60</span><span class="p">,</span> <span class="nv">%rax</span> 
+</span></span><span class="line"><span class="cl"><span class="c1">#APP
+</span></span></span><span class="line"><span class="cl"><span class="c1"># 5 &#34;main.cpp&#34; 1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nf">movq</span> <span class="no">$60</span><span class="p">,</span> <span class="nv">%rax</span> 
 </span></span><span class="line"><span class="cl"><span class="no">movq</span> <span class="no">$0</span><span class="p">,</span>  <span class="nv">%rdi</span> 
 </span></span><span class="line"><span class="cl"><span class="no">syscall</span>        
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c"># 0 &#34;&#34; 2
-</span></span></span><span class="line"><span class="cl"><span class="c">#NO_APP
-</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="no">movl</span>	<span class="no">$0</span><span class="p">,</span> <span class="nv">%eax</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 0 &#34;&#34; 2
+</span></span></span><span class="line"><span class="cl"><span class="c1">#NO_APP
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nf">movl</span>	<span class="no">$0</span><span class="p">,</span> <span class="nv">%eax</span>
 </span></span><span class="line"><span class="cl">	<span class="nf">popq</span>	<span class="nv">%rbp</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.cfi_def_cfa</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span>
 </span></span><span class="line"><span class="cl">	<span class="nf">ret</span>
@@ -244,8 +244,8 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">	<span class="na">.section</span>	<span class="no">.note.GNU-stack</span><span class="p">,</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="na">@progbits</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">; ********** test.s **********
-</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="na">.file</span>	<span class="s">&#34;test.cpp&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">; ********** test.s **********
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="na">.file</span>	<span class="s">&#34;test.cpp&#34;</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.text</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.globl</span>	<span class="no">_Z4funcv</span>
 </span></span><span class="line"><span class="cl">	<span class="na">.type</span>	<span class="no">_Z4funcv</span><span class="p">,</span> <span class="na">@function</span>

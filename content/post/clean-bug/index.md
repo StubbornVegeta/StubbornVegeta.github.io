@@ -13,3 +13,4 @@ categories:
 
 [ssh登录环境变量不生效](/clean-bug/ssh登录环境变量不生效)
 
+[LuaSnip解放你的双手](/clean-bug/luasnip解放你的双手)
