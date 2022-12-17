@@ -140,7 +140,7 @@ if (!doNotTrack) {
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 5 分钟
                 </time>
             </div>
         
@@ -155,9 +155,13 @@ if (!doNotTrack) {
     <h2 id="luasnip与neovim">LuaSnip与neovim</h2>
 <p>在neovim用lua重写之后，用lua去写代码片段，似乎成了一种天经地义的事情，于是<a class="link" href="https://github.com/L3MON4D3/LuaSnip"  target="_blank" rel="noopener"
     >LuaSnip</a>诞生了，为了兼容之前各种snippet插件的格式，LuaSnip允许你使用vscode以及SnipMate（UltiSnip）的格式去写代码片段，但对这些格式做了一定的扩展和修改（兼容了，但没完全兼容），这里以vscode代码片段为例，大致展示一些常用的写法：</p>
-<ol>
-<li>动态文本输入（Dynamic Node）</li>
-</ol>
+<h3 id="动态文本输入dynamic-node">动态文本输入（Dynamic Node）</h3>
+<p>比如在C++中，经常在头文件开始处写下这样的宏定义，来防止头文件被重复引用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#ifndef _XXX_H
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _XXX_H
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">// write your code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#endif </span><span class="c1">//_XXX_H
+</span></span></span></code></pre></div><p>此类代码片段中包含重复的输入（<code>_XXX_H</code>），我们并不像重复输入这类文本，因此我们可以定义如下代码片段：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">  <span class="s2">&#34;Header&#34;</span><span class="err">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;prefix&#34;</span><span class="p">:</span> <span class="s2">&#34;ifn&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">[</span>
@@ -167,6 +171,51 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">      <span class="s2">&#34;#endif //$1&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">],</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;add _HEADER_H&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></div><p><figure 
+	>
+	<a href="/img/luasnip-img/DynamicNode.gif" >
+		<img src="/img/luasnip-img/DynamicNode.gif"
+			
+			
+			
+			loading="lazy"
+			alt="DynamicNode">
+	</a>
+	
+	<figcaption>DynamicNode</figcaption>
+	
+</figure></p>
+<h4 id="参数解释">参数解释</h4>
+<ul>
+<li>
+<p>&ldquo;Header&rdquo;: 该代码片段的名字</p>
+</li>
+<li>
+<p>&ldquo;prefix&rdquo;: 触发单词</p>
+</li>
+<li>
+<p>&ldquo;body&rdquo;: 代码片段展开主体，多行语句写在中括号里，用逗号分隔每一行语句，<code>$1</code>是光标第一次出现的位置，<code>$0</code>是光标最后一次出现的位置，<code>${1:_HEADER_H}</code>中的<code>_HEADER_H</code>为占位符，默认无输入时填充<code>_HEADER_H</code></p>
+</li>
+<li>
+<p>&ldquo;description&rdquo;: 代码片段的解释文档</p>
+</li>
+</ul>
+<h3 id="选项之间跳转choicenode">选项之间跳转（ChoiceNode）</h3>
+<p>有时候，我们的变量只会取到某几个固定值（比如bool类型：true和false两个取值），我们希望可以直接改变变量的值，让其在可能的取值之间变化，此时我们可以定义如下代码片段：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">  <span class="s2">&#34;true&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;prefix&#34;</span><span class="p">:</span> <span class="s2">&#34;true&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;${1|true,false|}&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;true -&gt; false&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;false&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;prefix&#34;</span><span class="p">:</span> <span class="s2">&#34;false&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;${1|false,true|}&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;false -&gt; true&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span></code></pre></div><p><figure 
 	>
@@ -181,8 +230,16 @@ if (!doNotTrack) {
 	
 	<figcaption>ChoiceNode</figcaption>
 	
-</figure>
-<figure 
+</figure></p>
+<h3 id="复用选择文本">复用选择文本</h3>
+<p>当我们复制了一个图片的链接，并把它粘贴到markdown中，突然发现自己忘记写<code>![](link_img)</code>，我们希望可以直接选中链接，然后将其补全成正确的格式，此时我们可以定义如下代码片段：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">  <span class="s2">&#34;image&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;prefix&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;img&#34;</span><span class="p">,</span> <span class="s2">&#34;!&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;![${1:img_name}]($TM_SELECTED_TEXT)&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34; -&gt; image&#34;</span>
+</span></span></code></pre></div><p><figure 
 	>
 	<a href="/img/luasnip-img/visual.gif" >
 		<img src="/img/luasnip-img/visual.gif"
@@ -190,27 +247,60 @@ if (!doNotTrack) {
 			
 			
 			loading="lazy"
-			alt="visual">
+			alt="selected text">
 	</a>
 	
-	<figcaption>visual</figcaption>
+	<figcaption>selected text</figcaption>
 	
-</figure>
-<figure 
-	>
-	<a href="/img/luasnip-img/DynamicNode.gif" >
-		<img src="/img/luasnip-img/DynamicNode.gif"
-			
-			
-			
-			loading="lazy"
-			alt="DynamicNode">
-	</a>
-	
-	<figcaption>DynamicNode</figcaption>
-	
-</figure>
-<figure 
+</figure></p>
+<p>这里我们可以使用img或者!来触发补全</p>
+<p>以上这些代码片段基本可以满足我们平时写代码的大部分需求，vscode snippet的语法也比较简单易懂，但是还有一些特殊情况，我们直接使用LuaSnip自己的语法去写，可能会更方便，比如通过自动触发补全来达到文本替换的效果。</p>
+<p>vscode去写类似片段的画风是这样的：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;Namespace Src&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;prefix&#34;</span><span class="p">:</span> <span class="s2">&#34;ns_src&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;namespace ${RELATIVE_FILEPATH/^(?:.*[\\\\\\/])?(src)(?=[\\\\\\/])|[\\\\\\/][^\\\\\\/]*$|([\\\\\\/])/${1:+Src}${2:+\\\\}/g};&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">     <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;Namespace for file routes inside the src folder&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="err">,</span>
+</span></span></code></pre></div><p><a class="link" href="https://stackoverflow.com/questions/70869062/how-can-i-create-a-vscode-snippet-to-automatically-insert-namespace-of-files-ins"  target="_blank" rel="noopener"
+    >How can I create a VSCode snippet to automatically insert namespace of files inside my src folder?</a></p>
+<p>这里展示一个LuaSnip编写的文本替换的例子，不按shift键输入数字键上方对应的符号：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">shift_switch</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s1">&#39;4&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kr">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="s1">&#39;$&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">end</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s1">&#39;5&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kr">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="s1">&#39;%&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">end</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s1">&#39;6&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kr">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="s1">&#39;^&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">end</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s1">&#39;7&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kr">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="s1">&#39;&amp;&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">end</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s1">&#39;8&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kr">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="s1">&#39;*&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">end</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ls.add_snippets</span><span class="p">(</span><span class="s2">&#34;all&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">s</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">trig</span> <span class="o">=</span> <span class="s2">&#34;([4-8]);;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">regTrig</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">snip</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">print</span><span class="p">(</span><span class="n">snip.captures</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">return</span> <span class="n">shift_switch</span><span class="p">[</span><span class="n">snip.captures</span><span class="p">[</span><span class="mi">1</span><span class="p">]]()</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">end</span><span class="p">,</span> <span class="p">{})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">type</span> <span class="o">=</span> <span class="s2">&#34;autosnippets&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">key</span> <span class="o">=</span> <span class="s2">&#34;shift&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p><figure 
 	>
 	<a href="/img/luasnip-img/autotrig.gif" >
 		<img src="/img/luasnip-img/autotrig.gif"
@@ -225,7 +315,196 @@ if (!doNotTrack) {
 	
 </figure></p>
 <h2 id="luasnip代码片段的基本形式">LuaSnip代码片段的基本形式</h2>
-
+<blockquote>
+<p>更多教程查阅LuaSnip官方文档：https://zjp-cn.github.io/neovim0.6-blogs/nvim/luasnip/doc1.html</p>
+</blockquote>
+<p>在 LuaSnip 中，代码片段由节点 (nodes) 组成。节点包括：</p>
+<ul>
+<li>
+<p>textNode：静态文本</p>
+</li>
+<li>
+<p>insertNode：可编辑的文本</p>
+</li>
+<li>
+<p>functionNode：函数节点，可从其他节点的内容生成的文本</p>
+</li>
+<li>
+<p>dynamicNode：动态节点，基于输入生成的节点</p>
+</li>
+<li>
+<p>其他节点</p>
+<ul>
+<li>choiceNode：在两个节点（或更多节点）之间进行选择</li>
+<li>restoreNode：存储和恢复到节点的输入</li>
+</ul>
+</li>
+</ul>
+<h2 id="luasnip代码片段编写">LuaSnip代码片段编写</h2>
+<p>一些变量的定义：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">ls</span> <span class="o">=</span> <span class="n">require</span> <span class="s2">&#34;luasnip&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">s</span> <span class="o">=</span> <span class="n">ls.snippet</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">sn</span> <span class="o">=</span> <span class="n">ls.snippet_node</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">isn</span> <span class="o">=</span> <span class="n">ls.indent_snippet_node</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">t</span> <span class="o">=</span> <span class="n">ls.text_node</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">i</span> <span class="o">=</span> <span class="n">ls.insert_node</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">ls.function_node</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">c</span> <span class="o">=</span> <span class="n">ls.choice_node</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">d</span> <span class="o">=</span> <span class="n">ls.dynamic_node</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">r</span> <span class="o">=</span> <span class="n">ls.restore_node</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">events</span> <span class="o">=</span> <span class="n">require</span> <span class="s2">&#34;luasnip.util.events&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">ai</span> <span class="o">=</span> <span class="n">require</span> <span class="s2">&#34;luasnip.nodes.absolute_indexer&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">extras</span> <span class="o">=</span> <span class="n">require</span> <span class="s2">&#34;luasnip.extras&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">fmt</span> <span class="o">=</span> <span class="n">extras.fmt</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">m</span> <span class="o">=</span> <span class="n">extras.m</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">l</span> <span class="o">=</span> <span class="n">extras.l</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">postfix</span> <span class="o">=</span> <span class="n">require</span> <span class="s2">&#34;luasnip.extras.postfix&#34;</span><span class="p">.</span><span class="n">postfix</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>t:  静态文本</p>
+</li>
+<li>
+<p>i: 可编辑的文本</p>
+</li>
+<li>
+<p>f: 函数节点，可从其他节点的内容生成的文本</p>
+</li>
+<li>
+<p>d: 动态节点，基于输入生成的节点</p>
+</li>
+<li>
+<p>c: 在两个节点（或更多节点）之间进行选择</p>
+</li>
+<li>
+<p>r: 存储和恢复到节点的输入</p>
+</li>
+</ul>
+<h3 id="textnode">textNode</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">s</span><span class="p">(</span><span class="s2">&#34;trigger&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="p">({</span><span class="s2">&#34;first line&#34;</span><span class="p">,</span> <span class="s2">&#34;second line&#34;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></div><p>多行字符串可以通过 <strong>花括号包裹多个字符串</strong>（table） 来定义，因此换行可以用<code>t({&quot;&quot;, &quot;&quot;})</code>来表示。</p>
+<h3 id="insertnode">insertNode</h3>
+<p>这种节点包含可编辑的文本，并且可以跳进和跳出（像 vscode snippets 中的 $1）。</p>
+<h3 id="functionnode">functionNode</h3>
+<p>FunctionNode （函数节点） 根据其他节点的内容，使用自定义的函数来插入文本，格式如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">ls.add_snippets</span><span class="p">(</span><span class="s2">&#34;all&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span><span class="p">(</span><span class="s2">&#34;trig4&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">i</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;text_of_first &#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="n">i</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">{</span> <span class="s2">&#34;first_line_of_second&#34;</span><span class="p">,</span> <span class="s2">&#34;second_line_of_second&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span> <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">      <span class="n">f</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">function</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">snip</span><span class="p">,</span> <span class="n">user_args1</span><span class="p">,</span> <span class="n">user_args2</span><span class="p">)</span> <span class="kr">return</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">..</span> <span class="s2">&#34; &#34;</span> <span class="o">..</span> <span class="n">args</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">..</span> <span class="n">user_args1</span> <span class="o">..</span> <span class="n">user_args2</span> <span class="kr">end</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="n">user_args</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&#34; this is user_args&#34;</span><span class="p">,</span> <span class="s2">&#34; end&#34;</span><span class="p">}</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p>functionNode有三个参数:</p>
+<ul>
+<li>
+<p>函数</p>
+<ul>
+<li>args: 获取指定节点索引处的文本, 例如我们传递1号索引，2号索引（注意，此处有先后顺序的区别，{1，2}是先传1后传2，{2，1}则相反），args获取的参数相当于一个表格，行索引对应args的第一维，列索引对应args的第二维，因此<code>args[2][1] = first_line_of_second</code></li>
+</ul>
+<pre tabindex="0"><code>| text_of_first         | first_line_of_second |
+| second_line_of_second |                      |
+</code></pre><p>如果我们传递的节点索引为{2, 1}，则args获取的参数为</p>
+<pre tabindex="0"><code>| first_line_of_second  | text_of_first        |
+| second_line_of_second |                      |
+</code></pre><ul>
+<li>
+<p>snip: snip 为函数节点的直系父节点。它能轻松访问函数节点中可能有用的任何内容，比如触发条件中正则表达式匹配的内容：<code>trig = &quot;([4-8]);;&quot;</code>，<code>snip.captures</code>可以获取当前匹配的数字具体是几。</p>
+</li>
+<li>
+<p>user_arg1[user_args2, &hellip;, user_argsn]: 用户参数，可通过user_args传递</p>
+</li>
+</ul>
+</li>
+<li>
+<p>节点索引：args中提到的节点索引，示例中的{1, 2}</p>
+</li>
+<li>
+<p>用户参数【可选】：传递user_args1，user_args2用</p>
+</li>
+</ul>
+<p>代码片段展开结果：</p>
+<pre tabindex="0"><code>text_of_first first_line_of_second
+second_line_of_second
+text_of_first first_line_of_second this is user_args end
+</code></pre><h3 id="choicenode">ChoiceNode</h3>
+<p>ChoiceNode 允许在多个节点之间进行选择。</p>
+<p>通过调用 ls.change_choice(1) (向前) 或 ls.change_choice(-1) (向后) 来更改 ChoiceNode 的当前选择，这里我的绑定按键是<code>ctrl+j</code>与<code>ctrl+k</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">vim.api</span><span class="p">.</span><span class="n">nvim_set_keymap</span><span class="p">(</span><span class="s2">&#34;i&#34;</span><span class="p">,</span> <span class="s2">&#34;&lt;C-j&gt;&#34;</span><span class="p">,</span> <span class="s2">&#34;&lt;Plug&gt;luasnip-next-choice&#34;</span><span class="p">,</span> <span class="p">{})</span>
+</span></span><span class="line"><span class="cl"><span class="n">vim.api</span><span class="p">.</span><span class="n">nvim_set_keymap</span><span class="p">(</span><span class="s2">&#34;s&#34;</span><span class="p">,</span> <span class="s2">&#34;&lt;C-j&gt;&#34;</span><span class="p">,</span> <span class="s2">&#34;&lt;Plug&gt;luasnip-next-choice&#34;</span><span class="p">,</span> <span class="p">{})</span>
+</span></span><span class="line"><span class="cl"><span class="n">vim.api</span><span class="p">.</span><span class="n">nvim_set_keymap</span><span class="p">(</span><span class="s2">&#34;i&#34;</span><span class="p">,</span> <span class="s2">&#34;&lt;C-k&gt;&#34;</span><span class="p">,</span> <span class="s2">&#34;&lt;Plug&gt;luasnip-prev-choice&#34;</span><span class="p">,</span> <span class="p">{})</span>
+</span></span><span class="line"><span class="cl"><span class="n">vim.api</span><span class="p">.</span><span class="n">nvim_set_keymap</span><span class="p">(</span><span class="s2">&#34;s&#34;</span><span class="p">,</span> <span class="s2">&#34;&lt;C-k&gt;&#34;</span><span class="p">,</span> <span class="s2">&#34;&lt;Plug&gt;luasnip-prev-choice&#34;</span><span class="p">,</span> <span class="p">{})</span>
+</span></span></code></pre></div><p>个人认为vscode snippet的choiceNode更容易编写，我可能会更偏向与通过vscode snippet的方式去实现ChoiceNode，因此这里就不解释ChoiceNode的相关函数了，具体解释请移步 <a class="link" href="https://zjp-cn.github.io/neovim0.6-blogs/nvim/luasnip/doc1.html#choicenode"  target="_blank" rel="noopener"
+    >ChoiceNode</a></p>
+<p>不过我还是写了<a class="link" href="#luasnip-choicenode" >LuaSnip版ChoiceNode示例</a></p>
+<p>更多配置参见 <a class="link" href="https://github.com/StubbornVegeta/nvim"  target="_blank" rel="noopener"
+    >StubbornVegeta&rsquo;s neovim config</a></p>
+<h2 id="附录">附录</h2>
+<h3 id="luasnip-dynamicnode">[LuaSnip] DynamicNode</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">ls.add_snippets</span><span class="p">(</span><span class="s2">&#34;all&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">trig</span> <span class="o">=</span> <span class="s2">&#34;ifndef&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dscr</span> <span class="o">=</span> <span class="s2">&#34;ifndef .. define .. endif&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">t</span><span class="p">({</span><span class="s2">&#34;#ifndef &#34;</span><span class="p">}),</span> <span class="n">i</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">t</span><span class="p">({</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">}),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="kr">function</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">snip</span><span class="p">,</span> <span class="n">user_args_1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">return</span>  <span class="n">user_args_1</span> <span class="o">..</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">          <span class="kr">end</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span> <span class="mi">1</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span> <span class="n">user_args</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;#define &#34;</span> <span class="p">}</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span> <span class="n">t</span><span class="p">({</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">}),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">t</span><span class="p">({</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="s2">&#34;#endif&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span> <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><h3 id="luasnip-choicenode">[LuaSnip] ChoiceNode</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">ls.add_snippets</span><span class="p">(</span><span class="s2">&#34;c&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">s</span><span class="p">(</span><span class="s2">&#34;true&#34;</span><span class="p">,</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span><span class="p">(</span><span class="kc">nil</span><span class="p">,</span> <span class="s2">&#34;true&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="kr">return</span> <span class="s2">&#34;false&#34;</span> <span class="kr">end</span><span class="p">,</span> <span class="p">{})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">})),</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">s</span><span class="p">(</span><span class="s2">&#34;false&#34;</span><span class="p">,</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span><span class="p">(</span><span class="kc">nil</span><span class="p">,</span> <span class="s2">&#34;false&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="kr">return</span> <span class="s2">&#34;true&#34;</span> <span class="kr">end</span><span class="p">,</span> <span class="p">{})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}))</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></div><h3 id="luasnip-复用选择文本">[LuaSnip] 复用选择文本</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">ls.add_snippets</span><span class="p">(</span><span class="s2">&#34;all&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">trig</span> <span class="o">=</span> <span class="s2">&#34;ifndef&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dscr</span> <span class="o">=</span> <span class="s2">&#34;ifndef .. define .. endif&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">t</span><span class="p">({</span><span class="s2">&#34;#ifndef &#34;</span><span class="p">}),</span> <span class="n">i</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">t</span><span class="p">({</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">}),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="kr">function</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">snip</span><span class="p">,</span> <span class="n">user_args_1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">return</span>  <span class="n">user_args_1</span> <span class="o">..</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">          <span class="kr">end</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span> <span class="mi">1</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span> <span class="n">user_args</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;#define &#34;</span> <span class="p">}</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span> <span class="n">t</span><span class="p">({</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">}),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">t</span><span class="p">({</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="s2">&#34;#endif&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span> <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div>
 </section>
 
 
@@ -893,8 +1172,33 @@ if (!doNotTrack) {
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li><a href="#luasnip与neovim">LuaSnip与neovim</a></li>
+    <li><a href="#luasnip与neovim">LuaSnip与neovim</a>
+      <ol>
+        <li><a href="#动态文本输入dynamic-node">动态文本输入（Dynamic Node）</a>
+          <ol>
+            <li><a href="#参数解释">参数解释</a></li>
+          </ol>
+        </li>
+        <li><a href="#选项之间跳转choicenode">选项之间跳转（ChoiceNode）</a></li>
+        <li><a href="#复用选择文本">复用选择文本</a></li>
+      </ol>
+    </li>
     <li><a href="#luasnip代码片段的基本形式">LuaSnip代码片段的基本形式</a></li>
+    <li><a href="#luasnip代码片段编写">LuaSnip代码片段编写</a>
+      <ol>
+        <li><a href="#textnode">textNode</a></li>
+        <li><a href="#insertnode">insertNode</a></li>
+        <li><a href="#functionnode">functionNode</a></li>
+        <li><a href="#choicenode">ChoiceNode</a></li>
+      </ol>
+    </li>
+    <li><a href="#附录">附录</a>
+      <ol>
+        <li><a href="#luasnip-dynamicnode">[LuaSnip] DynamicNode</a></li>
+        <li><a href="#luasnip-choicenode">[LuaSnip] ChoiceNode</a></li>
+        <li><a href="#luasnip-复用选择文本">[LuaSnip] 复用选择文本</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
                 </div>
