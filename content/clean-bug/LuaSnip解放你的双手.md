@@ -280,7 +280,7 @@ vim.api.nvim_set_keymap("i", "<C-k>", "<Plug>luasnip-prev-choice", {})
 vim.api.nvim_set_keymap("s", "<C-k>", "<Plug>luasnip-prev-choice", {})
 ```
 
-个人认为vscode snippet的choiceNode更容易编写，我可能会更偏向与通过vscode snippet的方式去实现ChoiceNode，因此这里就不解释ChoiceNode的相关函数了，具体解释请移步 [ChoiceNode](https://zjp-cn.github.io/neovim0.6-blogs/nvim/luasnip/doc1.html#choicenode)
+个人认为vscode snippet的choiceNode更容易编写，我可能会更偏向于通过vscode snippet的方式去实现ChoiceNode，因此这里就不解释ChoiceNode的相关函数了，具体解释请移步 [ChoiceNode](https://zjp-cn.github.io/neovim0.6-blogs/nvim/luasnip/doc1.html#choicenode)
 
 
 不过我还是写了[LuaSnip版ChoiceNode示例](#luasnip-choicenode)
