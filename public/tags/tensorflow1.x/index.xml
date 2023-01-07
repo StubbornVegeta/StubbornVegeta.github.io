@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>tensorflow1.x on 倔强的贝吉塔</title>
-        <link>https://svegeta.gitee.io/tags/tensorflow1.x/</link>
+        <link>/tags/tensorflow1.x/</link>
         <description>Recent content in tensorflow1.x on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 06 Aug 2022 22:12:00 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/tensorflow1.x/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Aug 2022 22:12:00 +0800</lastBuildDate><atom:link href="/tags/tensorflow1.x/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>tensorflow新建op (cpp) </title>
-        <link>https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp/</link>
+        <link>/tensorflow/tensorflow-custom-op-cpp/</link>
         <pubDate>Sat, 06 Aug 2022 22:12:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/categories/tensorflow/tensorflow.png" alt="Featured image of post tensorflow新建op (cpp) " /&gt;&lt;h2 id=&#34;为什么使用cpp新建op&#34;&gt;为什么使用cpp新建op&lt;/h2&gt;
+        <guid>/tensorflow/tensorflow-custom-op-cpp/</guid>
+        <description>&lt;img src="/categories/tensorflow/tensorflow.png" alt="Featured image of post tensorflow新建op (cpp) " /&gt;&lt;h2 id=&#34;为什么使用cpp新建op&#34;&gt;为什么使用cpp新建op&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;一些操作表示成现有操作的组合不好实现或者无法实现。&lt;/li&gt;
 &lt;li&gt;已有操作的组合效率不高。&lt;/li&gt;

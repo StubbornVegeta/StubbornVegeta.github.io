@@ -2,104 +2,104 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on 倔强的贝吉塔</title>
-        <link>https://svegeta.gitee.io/tags/</link>
+        <link>/tags/</link>
         <description>Recent content in Tags on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 16 Dec 2022 23:01:34 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 16 Dec 2022 23:01:34 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>LuaSnip</title>
-        <link>https://svegeta.gitee.io/tags/luasnip/</link>
+        <link>/tags/luasnip/</link>
         <pubDate>Fri, 16 Dec 2022 23:01:34 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/luasnip/</guid>
+        <guid>/tags/luasnip/</guid>
         <description></description>
         </item>
         <item>
         <title>neovim</title>
-        <link>https://svegeta.gitee.io/tags/neovim/</link>
+        <link>/tags/neovim/</link>
         <pubDate>Fri, 16 Dec 2022 23:01:34 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/neovim/</guid>
+        <guid>/tags/neovim/</guid>
         <description></description>
         </item>
         <item>
         <title>日常记录</title>
-        <link>https://svegeta.gitee.io/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+        <link>/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Fri, 16 Dec 2022 23:01:34 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+        <guid>/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
         <description></description>
         </item>
         <item>
         <title>ssh</title>
-        <link>https://svegeta.gitee.io/tags/ssh/</link>
+        <link>/tags/ssh/</link>
         <pubDate>Sat, 13 Aug 2022 15:31:11 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/ssh/</guid>
+        <guid>/tags/ssh/</guid>
         <description></description>
         </item>
         <item>
         <title>docker</title>
-        <link>https://svegeta.gitee.io/tags/docker/</link>
+        <link>/tags/docker/</link>
         <pubDate>Wed, 10 Aug 2022 22:41:41 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/docker/</guid>
+        <guid>/tags/docker/</guid>
         <description></description>
         </item>
         <item>
         <title>wsl2</title>
-        <link>https://svegeta.gitee.io/tags/wsl2/</link>
+        <link>/tags/wsl2/</link>
         <pubDate>Sun, 07 Aug 2022 15:22:41 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/wsl2/</guid>
+        <guid>/tags/wsl2/</guid>
         <description></description>
         </item>
         <item>
         <title>op</title>
-        <link>https://svegeta.gitee.io/tags/op/</link>
+        <link>/tags/op/</link>
         <pubDate>Sat, 06 Aug 2022 22:12:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/op/</guid>
+        <guid>/tags/op/</guid>
         <description></description>
         </item>
         <item>
         <title>tensorflow1.x</title>
-        <link>https://svegeta.gitee.io/tags/tensorflow1.x/</link>
+        <link>/tags/tensorflow1.x/</link>
         <pubDate>Sat, 06 Aug 2022 22:12:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/tensorflow1.x/</guid>
+        <guid>/tags/tensorflow1.x/</guid>
         <description></description>
         </item>
         <item>
         <title>Neovim插件</title>
-        <link>https://svegeta.gitee.io/tags/neovim%E6%8F%92%E4%BB%B6/</link>
+        <link>/tags/neovim%E6%8F%92%E4%BB%B6/</link>
         <pubDate>Sat, 06 Aug 2022 13:43:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/neovim%E6%8F%92%E4%BB%B6/</guid>
+        <guid>/tags/neovim%E6%8F%92%E4%BB%B6/</guid>
         <description></description>
         </item>
         <item>
         <title>MacOS</title>
-        <link>https://svegeta.gitee.io/tags/macos/</link>
+        <link>/tags/macos/</link>
         <pubDate>Sat, 23 Jul 2022 00:15:09 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/macos/</guid>
+        <guid>/tags/macos/</guid>
         <description></description>
         </item>
         <item>
         <title>zsh</title>
-        <link>https://svegeta.gitee.io/tags/zsh/</link>
+        <link>/tags/zsh/</link>
         <pubDate>Sat, 23 Jul 2022 00:15:09 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/zsh/</guid>
+        <guid>/tags/zsh/</guid>
         <description></description>
         </item>
         <item>
         <title>C&#43;&#43;语法知识</title>
-        <link>https://svegeta.gitee.io/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</link>
+        <link>/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</link>
         <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</guid>
+        <guid>/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</guid>
         <description></description>
         </item>
         

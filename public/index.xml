@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>倔强的贝吉塔</title>
-        <link>https://svegeta.gitee.io/</link>
+        <link>/</link>
         <description>Recent content on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 16 Dec 2022 23:01:34 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 16 Dec 2022 23:01:34 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>TensorFlow系列</title>
-        <link>https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/</link>
+        <link>/p/tensorflow%E7%B3%BB%E5%88%97/</link>
         <pubDate>Sat, 06 Aug 2022 21:57:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/tensorflow.png" alt="Featured image of post TensorFlow系列" /&gt;&lt;h2 id=&#34;tensorflow1x&#34;&gt;TensorFlow1.x&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp&#34; &gt;TensorFlow新建op (cpp)&lt;/a&gt;&lt;/p&gt;
+        <guid>/p/tensorflow%E7%B3%BB%E5%88%97/</guid>
+        <description>&lt;img src="/p/tensorflow%E7%B3%BB%E5%88%97/tensorflow.png" alt="Featured image of post TensorFlow系列" /&gt;&lt;h2 id=&#34;tensorflow1x&#34;&gt;TensorFlow1.x&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/tensorflow/tensorflow-custom-op-cpp&#34; &gt;TensorFlow新建op (cpp)&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tensorflow2x&#34;&gt;TensorFlow2.x&lt;/h2&gt;
 </description>
         </item>
         <item>
         <title>开源系列</title>
-        <link>https://svegeta.gitee.io/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/</link>
+        <link>/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/</link>
         <pubDate>Sat, 06 Aug 2022 13:43:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/opensource.png" alt="Featured image of post 开源系列" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/open-source/floatrun&#34; &gt;FloatRun&lt;/a&gt;&lt;/p&gt;
+        <guid>/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/</guid>
+        <description>&lt;img src="/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/opensource.png" alt="Featured image of post 开源系列" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/open-source/floatrun&#34; &gt;FloatRun&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>日常记录与bug处理</title>
-        <link>https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</link>
+        <link>/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</link>
         <pubDate>Sat, 23 Jul 2022 13:43:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug.png" alt="Featured image of post 日常记录与bug处理" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/macos%e4%b8%8bzsh%e7%bb%88%e7%ab%afbrew%e6%97%a0%e6%b3%95%e8%a1%a5%e5%85%a8&#34; &gt;MacOS下zsh终端brew无法补全&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/wsl2%e4%b8%8bdocker%e5%90%af%e5%8a%a8%e9%97%ae%e9%a2%98&#34; &gt;wsl2下docker启动问题&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/%e4%bb%a5%e9%9d%9eroot%e8%ba%ab%e4%bb%bd%e6%89%a7%e8%a1%8cdocker&#34; &gt;以非root身份执行docker&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/ssh%e7%99%bb%e5%bd%95%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e4%b8%8d%e7%94%9f%e6%95%88&#34; &gt;ssh登录环境变量不生效&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/clean-bug/luasnip%e8%a7%a3%e6%94%be%e4%bd%a0%e7%9a%84%e5%8f%8c%e6%89%8b&#34; &gt;LuaSnip解放你的双手&lt;/a&gt;&lt;/p&gt;
+        <guid>/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</guid>
+        <description>&lt;img src="/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/bug.png" alt="Featured image of post 日常记录与bug处理" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/clean-bug/macos%e4%b8%8bzsh%e7%bb%88%e7%ab%afbrew%e6%97%a0%e6%b3%95%e8%a1%a5%e5%85%a8&#34; &gt;MacOS下zsh终端brew无法补全&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/clean-bug/wsl2%e4%b8%8bdocker%e5%90%af%e5%8a%a8%e9%97%ae%e9%a2%98&#34; &gt;wsl2下docker启动问题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/clean-bug/%e4%bb%a5%e9%9d%9eroot%e8%ba%ab%e4%bb%bd%e6%89%a7%e8%a1%8cdocker&#34; &gt;以非root身份执行docker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/clean-bug/ssh%e7%99%bb%e5%bd%95%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e4%b8%8d%e7%94%9f%e6%95%88&#34; &gt;ssh登录环境变量不生效&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/clean-bug/luasnip%e8%a7%a3%e6%94%be%e4%bd%a0%e7%9a%84%e5%8f%8c%e6%89%8b&#34; &gt;LuaSnip解放你的双手&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>C&#43;&#43;系列文章链接合集</title>
-        <link>https://svegeta.gitee.io/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</link>
+        <link>/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</link>
         <pubDate>Fri, 25 Feb 2022 13:43:00 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/cpp-blue-static.png" alt="Featured image of post C&#43;&#43;系列文章链接合集" /&gt;&lt;!-- raw HTML omitted --&gt;
+        <guid>/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</guid>
+        <description>&lt;img src="/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/cpp-blue-static.png" alt="Featured image of post C&#43;&#43;系列文章链接合集" /&gt;&lt;!-- raw HTML omitted --&gt;
 &lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
 &lt;p&gt;“为什么要学习C++？”&lt;/p&gt;
 &lt;p&gt;看到这篇文章的人，无论情愿与否，想必都已经决定要学习C++了。不管喜不喜欢C++，我们都必须承认C++是一门实用的语言，古老但又一直保持活力，复杂但又十分重要。下面你将看到C++在不同领域的一些应用。&lt;/p&gt;
@@ -114,8 +114,8 @@
 &lt;p&gt;接下来就让我们一起学习C++吧。&lt;/p&gt;
 &lt;h2 id=&#34;c文章链接&#34;&gt;C++文章链接&lt;/h2&gt;
 &lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/cpp-series/c&amp;#43;&amp;#43;%e7%a8%8b%e5%ba%8f%e7%9a%84%e7%bc%96%e8%af%91%e8%bf%87%e7%a8%8b%e4%b8%80&#34; &gt;C++程序的编译过程（一）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://svegeta.gitee.io/cpp-series/c&amp;#43;&amp;#43;%e7%a8%8b%e5%ba%8f%e7%9a%84%e7%bc%96%e8%af%91%e8%bf%87%e7%a8%8b%e4%ba%8c&#34; &gt;C++程序的编译过程（二）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/cpp-series/c&amp;#43;&amp;#43;%e7%a8%8b%e5%ba%8f%e7%9a%84%e7%bc%96%e8%af%91%e8%bf%87%e7%a8%8b%e4%b8%80&#34; &gt;C++程序的编译过程（一）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/cpp-series/c&amp;#43;&amp;#43;%e7%a8%8b%e5%ba%8f%e7%9a%84%e7%bc%96%e8%af%91%e8%bf%87%e7%a8%8b%e4%ba%8c&#34; &gt;C++程序的编译过程（二）&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>ssh on 倔强的贝吉塔</title>
-        <link>https://svegeta.gitee.io/tags/ssh/</link>
+        <link>/tags/ssh/</link>
         <description>Recent content in ssh on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 13 Aug 2022 15:31:11 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 13 Aug 2022 15:31:11 +0800</lastBuildDate><atom:link href="/tags/ssh/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>ssh登录环境变量不生效</title>
-        <link>https://svegeta.gitee.io/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</link>
+        <link>/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</link>
         <pubDate>Sat, 13 Aug 2022 15:31:11 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post ssh登录环境变量不生效" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+        <guid>/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
+        <description>&lt;img src="/categories/clean-bug/bug.png" alt="Featured image of post ssh登录环境变量不生效" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
 &lt;p&gt;ssh登录服务器，环境变量不生效（一些命令找不到，即使已经写入了bashrc）&lt;/p&gt;
 &lt;h2 id=&#34;问题解决&#34;&gt;问题解决&lt;/h2&gt;
 &lt;p&gt;ssh登录服务器时，有时不会执行&lt;code&gt;.bashrc&lt;/code&gt;，而是执行&lt;code&gt;.bash_profile&lt;/code&gt;&lt;/p&gt;

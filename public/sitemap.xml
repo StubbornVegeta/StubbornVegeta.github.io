@@ -2,127 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://svegeta.gitee.io/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/categories/clean-bug/</loc>
+    <loc>/categories/clean-bug/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/clean-bug/</loc>
+    <loc>/clean-bug/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/luasnip/</loc>
+    <loc>/tags/luasnip/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/clean-bug/luasnip%E8%A7%A3%E6%94%BE%E4%BD%A0%E7%9A%84%E5%8F%8C%E6%89%8B/</loc>
+    <loc>/clean-bug/luasnip%E8%A7%A3%E6%94%BE%E4%BD%A0%E7%9A%84%E5%8F%8C%E6%89%8B/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/neovim/</loc>
+    <loc>/tags/neovim/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/</loc>
+    <loc>/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</loc>
+    <loc>/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2022-12-16T23:01:34+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/ssh/</loc>
+    <loc>/tags/ssh/</loc>
     <lastmod>2022-08-13T15:31:11+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</loc>
+    <loc>/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</loc>
     <lastmod>2022-08-13T15:31:11+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/docker/</loc>
+    <loc>/tags/docker/</loc>
     <lastmod>2022-08-10T22:41:41+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</loc>
+    <loc>/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</loc>
     <lastmod>2022-08-10T22:41:41+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/wsl2/</loc>
+    <loc>/tags/wsl2/</loc>
     <lastmod>2022-08-07T15:22:41+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/</loc>
+    <loc>/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2022-08-07T15:22:41+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/op/</loc>
+    <loc>/tags/op/</loc>
     <lastmod>2022-08-06T22:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/categories/tensorflow/</loc>
+    <loc>/categories/tensorflow/</loc>
     <lastmod>2022-08-06T22:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/tensorflow1.x/</loc>
+    <loc>/tags/tensorflow1.x/</loc>
     <lastmod>2022-08-06T22:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tensorflow/</loc>
+    <loc>/tensorflow/</loc>
     <lastmod>2022-08-06T22:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tensorflow/tensorflow-custom-op-cpp/</loc>
+    <loc>/tensorflow/tensorflow-custom-op-cpp/</loc>
     <lastmod>2022-08-06T22:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2022-08-06T21:57:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/p/tensorflow%E7%B3%BB%E5%88%97/</loc>
+    <loc>/p/tensorflow%E7%B3%BB%E5%88%97/</loc>
     <lastmod>2022-08-06T21:57:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/open-source/floatrun/</loc>
+    <loc>/open-source/floatrun/</loc>
     <lastmod>2022-08-06T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/neovim%E6%8F%92%E4%BB%B6/</loc>
+    <loc>/tags/neovim%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2022-08-06T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/categories/open-source/</loc>
+    <loc>/categories/open-source/</loc>
     <lastmod>2022-08-06T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/open-source/</loc>
+    <loc>/open-source/</loc>
     <lastmod>2022-08-06T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/</loc>
+    <loc>/p/%E5%BC%80%E6%BA%90%E7%B3%BB%E5%88%97/</loc>
     <lastmod>2022-08-06T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</loc>
+    <loc>/p/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%E4%B8%8Ebug%E5%A4%84%E7%90%86/</loc>
     <lastmod>2022-07-23T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/macos/</loc>
+    <loc>/tags/macos/</loc>
     <lastmod>2022-07-23T00:15:09+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/clean-bug/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</loc>
+    <loc>/clean-bug/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</loc>
     <lastmod>2022-07-23T00:15:09+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/zsh/</loc>
+    <loc>/tags/zsh/</loc>
     <lastmod>2022-07-23T00:15:09+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/page/</loc>
+    <loc>/page/</loc>
     <lastmod>2022-03-13T20:57:05+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/search/</loc>
+    <loc>/search/</loc>
     <lastmod>2022-03-13T20:57:05+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/user/</loc>
+    <loc>/user/</loc>
     <lastmod>2022-03-13T19:06:32+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/following/</loc>
+    <loc>/following/</loc>
     <lastmod>2022-03-13T17:50:10+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%BA%8C/</loc>
+    <loc>/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%BA%8C/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%B8%80/</loc>
+    <loc>/cpp-series/c&#43;&#43;%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E4%B8%80/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/categories/c&#43;&#43;%E7%B3%BB%E5%88%97/</loc>
+    <loc>/categories/c&#43;&#43;%E7%B3%BB%E5%88%97/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</loc>
+    <loc>/p/c-%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5%E5%90%88%E9%9B%86/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</loc>
+    <loc>/tags/c&#43;&#43;%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url><url>
-    <loc>https://svegeta.gitee.io/cpp-series/</loc>
+    <loc>/cpp-series/</loc>
     <lastmod>2022-02-25T13:43:00+08:00</lastmod>
   </url>
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Clean-bugs on 倔强的贝吉塔</title>
-        <link>https://svegeta.gitee.io/clean-bug/</link>
+        <link>/clean-bug/</link>
         <description>Recent content in Clean-bugs on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 16 Dec 2022 23:01:34 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/clean-bug/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 16 Dec 2022 23:01:34 +0800</lastBuildDate><atom:link href="/clean-bug/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>LuaSnip解放你的双手</title>
-        <link>https://svegeta.gitee.io/clean-bug/luasnip%E8%A7%A3%E6%94%BE%E4%BD%A0%E7%9A%84%E5%8F%8C%E6%89%8B/</link>
+        <link>/clean-bug/luasnip%E8%A7%A3%E6%94%BE%E4%BD%A0%E7%9A%84%E5%8F%8C%E6%89%8B/</link>
         <pubDate>Fri, 16 Dec 2022 23:01:34 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/clean-bug/luasnip%E8%A7%A3%E6%94%BE%E4%BD%A0%E7%9A%84%E5%8F%8C%E6%89%8B/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post LuaSnip解放你的双手" /&gt;&lt;h2 id=&#34;luasnip与neovim&#34;&gt;LuaSnip与neovim&lt;/h2&gt;
+        <guid>/clean-bug/luasnip%E8%A7%A3%E6%94%BE%E4%BD%A0%E7%9A%84%E5%8F%8C%E6%89%8B/</guid>
+        <description>&lt;img src="/categories/clean-bug/bug.png" alt="Featured image of post LuaSnip解放你的双手" /&gt;&lt;h2 id=&#34;luasnip与neovim&#34;&gt;LuaSnip与neovim&lt;/h2&gt;
 &lt;p&gt;在neovim用lua重写之后，用lua去写代码片段，似乎成了一种天经地义的事情，于是&lt;a class=&#34;link&#34; href=&#34;https://github.com/L3MON4D3/LuaSnip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LuaSnip&lt;/a&gt;诞生了，为了兼容之前各种snippet插件的格式，LuaSnip允许你使用vscode以及SnipMate（UltiSnip）的格式去写代码片段，但对这些格式做了一定的扩展和修改（兼容了，但没完全兼容），这里以vscode代码片段为例，大致展示一些常用的写法：&lt;/p&gt;
 &lt;h3 id=&#34;动态文本输入dynamic-node&#34;&gt;动态文本输入（Dynamic Node）&lt;/h3&gt;
@@ -34,8 +34,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure 
 	&gt;
-	&lt;a href=&#34;https://svegeta.gitee.io/img/luasnip-img/DynamicNode.gif&#34; &gt;
-		&lt;img src=&#34;https://svegeta.gitee.io/img/luasnip-img/DynamicNode.gif&#34;
+	&lt;a href=&#34;/img/luasnip-img/DynamicNode.gif&#34; &gt;
+		&lt;img src=&#34;/img/luasnip-img/DynamicNode.gif&#34;
 			
 			
 			
@@ -79,8 +79,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure 
 	&gt;
-	&lt;a href=&#34;https://svegeta.gitee.io/img/luasnip-img/ChoiceNode.gif&#34; &gt;
-		&lt;img src=&#34;https://svegeta.gitee.io/img/luasnip-img/ChoiceNode.gif&#34;
+	&lt;a href=&#34;/img/luasnip-img/ChoiceNode.gif&#34; &gt;
+		&lt;img src=&#34;/img/luasnip-img/ChoiceNode.gif&#34;
 			
 			
 			
@@ -101,8 +101,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34; -&amp;gt; image&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure 
 	&gt;
-	&lt;a href=&#34;https://svegeta.gitee.io/img/luasnip-img/visual.gif&#34; &gt;
-		&lt;img src=&#34;https://svegeta.gitee.io/img/luasnip-img/visual.gif&#34;
+	&lt;a href=&#34;/img/luasnip-img/visual.gif&#34; &gt;
+		&lt;img src=&#34;/img/luasnip-img/visual.gif&#34;
 			
 			
 			
@@ -162,8 +162,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure 
 	&gt;
-	&lt;a href=&#34;https://svegeta.gitee.io/img/luasnip-img/autotrig.gif&#34; &gt;
-		&lt;img src=&#34;https://svegeta.gitee.io/img/luasnip-img/autotrig.gif&#34;
+	&lt;a href=&#34;/img/luasnip-img/autotrig.gif&#34; &gt;
+		&lt;img src=&#34;/img/luasnip-img/autotrig.gif&#34;
 			
 			
 			
@@ -368,11 +368,11 @@ text_of_first first_line_of_second this is user_args end
         </item>
         <item>
         <title>ssh登录环境变量不生效</title>
-        <link>https://svegeta.gitee.io/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</link>
+        <link>/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</link>
         <pubDate>Sat, 13 Aug 2022 15:31:11 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post ssh登录环境变量不生效" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+        <guid>/clean-bug/ssh%E7%99%BB%E5%BD%95%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
+        <description>&lt;img src="/categories/clean-bug/bug.png" alt="Featured image of post ssh登录环境变量不生效" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
 &lt;p&gt;ssh登录服务器，环境变量不生效（一些命令找不到，即使已经写入了bashrc）&lt;/p&gt;
 &lt;h2 id=&#34;问题解决&#34;&gt;问题解决&lt;/h2&gt;
 &lt;p&gt;ssh登录服务器时，有时不会执行&lt;code&gt;.bashrc&lt;/code&gt;，而是执行&lt;code&gt;.bash_profile&lt;/code&gt;&lt;/p&gt;
@@ -388,11 +388,11 @@ text_of_first first_line_of_second this is user_args end
         </item>
         <item>
         <title>以非root身份执行docker</title>
-        <link>https://svegeta.gitee.io/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</link>
+        <link>/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</link>
         <pubDate>Wed, 10 Aug 2022 22:41:41 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post 以非root身份执行docker" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+        <guid>/clean-bug/%E4%BB%A5%E9%9D%9Eroot%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8Cdocker/</guid>
+        <description>&lt;img src="/categories/clean-bug/bug.png" alt="Featured image of post 以非root身份执行docker" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
 &lt;p&gt;Linux新建用户发现执行docker命令需要root权限。&lt;/p&gt;
 &lt;h2 id=&#34;问题解决&#34;&gt;问题解决&lt;/h2&gt;
 &lt;h3 id=&#34;添加docker组&#34;&gt;添加docker组&lt;/h3&gt;
@@ -409,11 +409,11 @@ text_of_first first_line_of_second this is user_args end
         </item>
         <item>
         <title>wsl2下docker启动问题</title>
-        <link>https://svegeta.gitee.io/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/</link>
+        <link>/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/</link>
         <pubDate>Sun, 07 Aug 2022 15:22:41 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post wsl2下docker启动问题" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+        <guid>/clean-bug/wsl2%E4%B8%8Bdocker%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;img src="/categories/clean-bug/bug.png" alt="Featured image of post wsl2下docker启动问题" /&gt;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
 &lt;p&gt;通常我们使用&lt;code&gt;systemctl start docker&lt;/code&gt;来启动docker，但Wsl2下没有&lt;code&gt;systemctl&lt;/code&gt;命令。&lt;/p&gt;
 &lt;h2 id=&#34;问题解决&#34;&gt;问题解决&lt;/h2&gt;
 &lt;p&gt;下载Docker Desktop [win]：&lt;a class=&#34;link&#34; href=&#34;https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -440,11 +440,11 @@ text_of_first first_line_of_second this is user_args end
         </item>
         <item>
         <title>MacOS下zsh终端brew无法补全</title>
-        <link>https://svegeta.gitee.io/clean-bug/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</link>
+        <link>/clean-bug/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</link>
         <pubDate>Sat, 23 Jul 2022 00:15:09 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/clean-bug/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</guid>
-        <description>&lt;img src="https://svegeta.gitee.io/categories/clean-bug/bug.png" alt="Featured image of post MacOS下zsh终端brew无法补全" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/.zsh/completions
+        <guid>/clean-bug/macos%E4%B8%8Bzsh%E7%BB%88%E7%AB%AFbrew%E6%97%A0%E6%B3%95%E8%A1%A5%E5%85%A8/</guid>
+        <description>&lt;img src="/categories/clean-bug/bug.png" alt="Featured image of post MacOS下zsh终端brew无法补全" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/.zsh/completions
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp /opt/homebrew/completions/zsh/_brew ~/.zsh/completions/
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;.zshrc&lt;/code&gt;中添加：&lt;/p&gt;

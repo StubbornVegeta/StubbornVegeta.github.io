@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 倔强的贝吉塔</title>
-        <link>https://svegeta.gitee.io/page/</link>
+        <link>/page/</link>
         <description>Recent content in Pages on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 13 Mar 2022 20:57:05 +0800</lastBuildDate><atom:link href="https://svegeta.gitee.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 13 Mar 2022 20:57:05 +0800</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Search</title>
-        <link>https://svegeta.gitee.io/search/</link>
+        <link>/search/</link>
         <pubDate>Sun, 13 Mar 2022 20:57:05 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/search/</guid>
+        <guid>/search/</guid>
         <description></description>
         </item>
         <item>
         <title>博主信息</title>
-        <link>https://svegeta.gitee.io/user/</link>
+        <link>/user/</link>
         <pubDate>Sun, 13 Mar 2022 19:06:32 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/user/</guid>
+        <guid>/user/</guid>
         <description>&lt;h2 id=&#34;一张待添加的简历&#34;&gt;一张待添加的简历&lt;/h2&gt;
 </description>
         </item>
         <item>
         <title>『倔强的贝吉塔』的关注</title>
-        <link>https://svegeta.gitee.io/following/</link>
+        <link>/following/</link>
         <pubDate>Sun, 13 Mar 2022 17:50:10 +0800</pubDate>
         
-        <guid>https://svegeta.gitee.io/following/</guid>
+        <guid>/following/</guid>
         <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.cryfeifei.cn/&#34; title=&#34;张小飞_WPS&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
     &lt;div class=&#34;friend-link-div&#34;&gt;
