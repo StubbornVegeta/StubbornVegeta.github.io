@@ -68,6 +68,19 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/a&gt;
+
+&lt;a href=&#34;https://stubbornvegeta.github.io/&#34; title=&#34;倔强的贝吉塔&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+    &lt;div class=&#34;friend-link-div&#34;&gt;
+        &lt;div class=&#34;friend-link-avatar&#34;&gt;
+            &lt;img src=https://stubbornvegeta.github.io/img/header_hu56783fe7a6d3fa0c826cc7642e3eca58_16701_300x0_resize_q75_box.jpg class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;friend-link-info&#34;&gt;
+            &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;friend-name&#34;&gt;倔强的贝吉塔&lt;/i&gt;
+            &lt;p class=&#34;friend-bio&#34;&gt;test&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
 &lt;/p&gt;
 </description>
         </item>
