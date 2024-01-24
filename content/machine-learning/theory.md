@@ -35,12 +35,9 @@ $$ \frac{\partial Y_{ij}}{\partial W_{rs}} = X_{ir} \cdot \delta_{sj} $$
 
 $$ \frac{\partial Y}{\partial W} = X $$
 
-注：对于函数$ Y = WX $，$ \frac{\partial Y}{\partial W} = X^T $
-
 可通过此网站 [https://www.matrixcalculus.org/](https://www.matrixcalculus.org/) 验证矩阵求导的正确性。
-<!-- 在神经网络的链式求导过程，我们通常还会乘以下一层反向计算的梯度，这时候我们需要对 $ \frac{\partial Y}{\partial W} $ 转置，因为下一层反向计算梯度的维度是和Y相同的 -->
-<!-- 这里的 $ X^T $ 是 $ X $ 的转置。 -->
 
+在神经网络的链式求导过程，我们求 $ Y $ 对 $ W $ 的梯度，通常还会乘以 $ Y $ 本身对应的梯度 $grad_y$，$grad_y$ 是 $ m \times k $ 的矩阵，这时候我们需要对 $ \frac{\partial Y}{\partial W} $ 转置。
 
 
 

@@ -131,7 +131,7 @@ if (!doNotTrack) {
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -160,7 +160,7 @@ if (!doNotTrack) {
 <p>注：对于函数$ Y = WX $，$ \frac{\partial Y}{\partial W} = X^T $</p>
 <p>可通过此网站 <a class="link" href="https://www.matrixcalculus.org/"  target="_blank" rel="noopener"
     >https://www.matrixcalculus.org/</a> 验证矩阵求导的正确性。</p>
-<!-- raw HTML omitted -->
+<p>在神经网络的链式求导过程，我们求Y对W的梯度，通常还会乘以Y本身对应的梯度 $grad_y$，考虑到 $grad_y$的维度，我们需要对 $ \frac{\partial Y}{\partial W} $ 转置。</p>
 <!-- raw HTML omitted -->
 <h2 id="softmax函数的反向传播">Softmax函数的反向传播</h2>
 <p>Softmax函数的定义是：</p>
