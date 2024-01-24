@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>machine learning on 倔强的贝吉塔</title>
+        <link>/categories/machine-learning/</link>
+        <description>Recent content in machine learning on 倔强的贝吉塔</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 18 Dec 2023 21:54:24 +0800</lastBuildDate><atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>机器学习中常用的一些公式推导</title>
+        <link>/machine-learning/theory/</link>
+        <pubDate>Mon, 18 Dec 2023 21:54:24 +0800</pubDate>
+        
+        <guid>/machine-learning/theory/</guid>
+        <description>&lt;h2 id=&#34;线性层的反向传播&#34;&gt;线性层的反向传播&lt;/h2&gt;
+&lt;p&gt;对于函数 $ Y = XW $ （ 注：$ X $ 是一个 $ m \times n $ 的矩阵，$ W $ 是一个 $ n \times k $ 的矩阵，$ Y $ 是一个 $ m \times k $ 的矩阵。这里的 $ W $ 通常代表模型的权重，而 $ X $ 代表输入数据。）&lt;/p&gt;
+&lt;p&gt;如何求 $ \frac{\partial Y}{\partial W} $呢，通常我们只关心其一个特定的切片，即 $ \frac{\partial Y_{ij}}{\partial W_{rs}} $。&lt;/p&gt;
+&lt;p&gt;对于单个元素 $ Y_{ij} $ 而言，其是矩阵 $ X $ 的第 $ i $ 行和矩阵 $ W $ 的第 $ j $ 列的点积。因此：&lt;/p&gt;
+&lt;p&gt;$$ Y_{ij} = \sum_{p=1}^{n} X_{ip} \cdot W_{pj} $$&lt;/p&gt;
+&lt;p&gt;当我们对 $ Y_{ij} $ 关于 $ W_{rs} $ 求导时，我们只关心 $ W_{rs} $ 这一项，其他项的导数为0。因此：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial Y_{ij}}{\partial W_{rs}} = \frac{\partial}{\partial W_{rs}} \left( \sum_{p=1}^{n} X_{ip} \cdot W_{pj} \right) $$&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial Y_{ij}}{\partial W_{rs}} = X_{ir} \cdot \frac{\partial W_{sj}}{\partial W_{rs}} $$&lt;/p&gt;
+&lt;p&gt;由于 $ \frac{\partial W_{sj}}{\partial W_{rs}} $ 只有当 $ s = r $ 且 $ j = s $ 时才为1，否则为0，因此：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial Y_{ij}}{\partial W_{rs}} = X_{ir} \cdot \delta_{sj} $$&lt;/p&gt;
+&lt;p&gt;其中 $ \delta_{sj} $ 是Kronecker delta 函数，当 $ s = j $ 时为1，否则为0&lt;/p&gt;
+&lt;p&gt;因此，$ \frac{\partial Y}{\partial W} $ 的每个元素 $ \frac{\partial Y_{ij}}{\partial W_{rs}} $ 都是一个 $ m \times n \times k $ 的张量，其中 $ i $ 和 $ j $ 分别索引 $ Y $ 的行和列，而 $ r $ 和 $ s $ 分别索引 $ W $ 的行和列。&lt;/p&gt;
+&lt;p&gt;然而，通常我们不会将 $ \frac{\partial Y}{\partial W} $ 视为一个张量，而是将其简化为一个矩阵。因为在实际应用中，我们通常对整个矩阵 $ W $ 进行更新，而不是单独更新它的每个元素。因此，我们可以将 $ \frac{\partial Y}{\partial W} $ 的所有元素 $ \frac{\partial Y_{ij}}{\partial W_{rs}} $ 合并成一个 $ m \times k \times n $ 的张量，然后将其简化为一个 $ m \times n $ 的矩阵，即 $ X $。这是因为在矩阵乘法中，$ Y $ 的每个元素 $ Y_{ij} $ 只依赖于 $ X $ 的第 $ i $ 行和 $ W $ 的第 $ j $ 列，所以 $ \frac{\partial Y}{\partial W} $ 实际上是一个 $ m \times n $ 的矩阵，而不是一个 $ m \times n \times k $ 的张量，最终有：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial Y}{\partial W} = X $$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;softmax函数的反向传播&#34;&gt;Softmax函数的反向传播&lt;/h2&gt;
+&lt;p&gt;Softmax函数的定义是：&lt;/p&gt;
+&lt;p&gt;$$ p_i = \frac{e^{z_i}}{\sum_j e^{z_j}} $$&lt;/p&gt;
+&lt;p&gt;对于Softmax函数的导数 $ \frac{\partial p_i}{\partial z_j} $， 可以通过以下方式计算：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial p_i}{\partial z_j} = \frac{\partial}{\partial z_j} \left( \frac{e^{z_i}}{\sum_k e^{z_k}} \right) $$&lt;/p&gt;
+&lt;p&gt;使用商的求导法则，我们得到：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial p_i}{\partial z_j} = \frac{e^{z_i} \cdot \frac{\partial}{\partial z_j}(\sum_k e^{z_k}) - \frac{\partial}{\partial z_j}(e^{z_i}) \cdot \sum_k e^{z_k}}{(\sum_k e^{z_k})^2} $$&lt;/p&gt;
+&lt;p&gt;简化后，我们得到：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial p_i}{\partial z_j} = \frac{e^{z_i} \cdot \delta_{ij} - e^{z_i} \cdot e^{z_j}}{(\sum_k e^{z_k})^2} $$&lt;/p&gt;
+&lt;p&gt;其中 $ \delta_{ij} $ 是Kronecker delta函数，当 $ i = j $ 时为1，否则为0。&lt;/p&gt;
+&lt;p&gt;进一步简化，我们得到：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial p_i}{\partial z_j} = p_i \cdot (1 - \delta_{ij}) - p_i \cdot p_j $$&lt;/p&gt;
+&lt;p&gt;最终，我们得到Softmax函数的导数为：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial p_i}{\partial z_j} = \begin{cases} p_i (1 - p_j) &amp;amp; \text{if } i = j \ -p_i p_j &amp;amp; \text{if } i \neq j \end{cases} $$&lt;/p&gt;
+&lt;p&gt;Softmax函数的导数是一个矩阵，其中每个元素都是输出概率的函数。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Machine Learning</title>
+        <link>/p/machine-learning/</link>
+        <pubDate>Sun, 18 Dec 2022 21:57:00 +0800</pubDate>
+        
+        <guid>/p/machine-learning/</guid>
+        <description>&lt;h2 id=&#34;attention&#34;&gt;attention&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/machine-learning/theory&#34; &gt;机器学习中常见的公式推导&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
