@@ -157,6 +157,9 @@ if (!doNotTrack) {
 <p>因此，$ \frac{\partial Y}{\partial W} $ 的每个元素 $ \frac{\partial Y_{ij}}{\partial W_{rs}} $ 都是一个 $ m \times n \times k $ 的张量，其中 $ i $ 和 $ j $ 分别索引 $ Y $ 的行和列，而 $ r $ 和 $ s $ 分别索引 $ W $ 的行和列。</p>
 <p>然而，通常我们不会将 $ \frac{\partial Y}{\partial W} $ 视为一个张量，而是将其简化为一个矩阵。因为在实际应用中，我们通常对整个矩阵 $ W $ 进行更新，而不是单独更新它的每个元素。因此，我们可以将 $ \frac{\partial Y}{\partial W} $ 的所有元素 $ \frac{\partial Y_{ij}}{\partial W_{rs}} $ 合并成一个 $ m \times k \times n $ 的张量，然后将其简化为一个 $ m \times n $ 的矩阵，即 $ X $。这是因为在矩阵乘法中，$ Y $ 的每个元素 $ Y_{ij} $ 只依赖于 $ X $ 的第 $ i $ 行和 $ W $ 的第 $ j $ 列，所以 $ \frac{\partial Y}{\partial W} $ 实际上是一个 $ m \times n $ 的矩阵，而不是一个 $ m \times n \times k $ 的张量，最终有：</p>
 <p>$$ \frac{\partial Y}{\partial W} = X $$</p>
+<p>注：对于函数$ Y = WX $，$ \frac{\partial Y}{\partial W} = X^T $</p>
+<p>可通过此网站 <a class="link" href="https://www.matrixcalculus.org/"  target="_blank" rel="noopener"
+    >https://www.matrixcalculus.org/</a> 验证矩阵求导的正确性。</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <h2 id="softmax函数的反向传播">Softmax函数的反向传播</h2>
@@ -172,7 +175,8 @@ if (!doNotTrack) {
 <p>进一步简化，我们得到：</p>
 <p>$$ \frac{\partial p_i}{\partial z_j} = p_i \cdot (1 - \delta_{ij}) - p_i \cdot p_j $$</p>
 <p>最终，我们得到Softmax函数的导数为：</p>
-<p>$$ \frac{\partial p_i}{\partial z_j} = \begin{cases} p_i (1 - p_j) &amp; \text{if } i = j \ -p_i p_j &amp; \text{if } i \neq j \end{cases} $$</p>
+<p>$$ \frac{\partial p_i}{\partial z_j} = \begin{cases} p_i (1 - p_j)   \text{  , if } i = j;
+\newline -p_i p_j  \text{ , if } i \neq j \end{cases} $$</p>
 <p>Softmax函数的导数是一个矩阵，其中每个元素都是输出概率的函数。</p>
 
 </section>
