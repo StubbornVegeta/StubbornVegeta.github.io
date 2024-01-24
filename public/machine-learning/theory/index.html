@@ -157,11 +157,9 @@ if (!doNotTrack) {
 <p>因此，$ \frac{\partial Y}{\partial W} $ 的每个元素 $ \frac{\partial Y_{ij}}{\partial W_{rs}} $ 都是一个 $ m \times n \times k $ 的张量，其中 $ i $ 和 $ j $ 分别索引 $ Y $ 的行和列，而 $ r $ 和 $ s $ 分别索引 $ W $ 的行和列。</p>
 <p>然而，通常我们不会将 $ \frac{\partial Y}{\partial W} $ 视为一个张量，而是将其简化为一个矩阵。因为在实际应用中，我们通常对整个矩阵 $ W $ 进行更新，而不是单独更新它的每个元素。因此，我们可以将 $ \frac{\partial Y}{\partial W} $ 的所有元素 $ \frac{\partial Y_{ij}}{\partial W_{rs}} $ 合并成一个 $ m \times k \times n $ 的张量，然后将其简化为一个 $ m \times n $ 的矩阵，即 $ X $。这是因为在矩阵乘法中，$ Y $ 的每个元素 $ Y_{ij} $ 只依赖于 $ X $ 的第 $ i $ 行和 $ W $ 的第 $ j $ 列，所以 $ \frac{\partial Y}{\partial W} $ 实际上是一个 $ m \times n $ 的矩阵，而不是一个 $ m \times n \times k $ 的张量，最终有：</p>
 <p>$$ \frac{\partial Y}{\partial W} = X $$</p>
-<p>注：对于函数$ Y = WX $，$ \frac{\partial Y}{\partial W} = X^T $</p>
 <p>可通过此网站 <a class="link" href="https://www.matrixcalculus.org/"  target="_blank" rel="noopener"
     >https://www.matrixcalculus.org/</a> 验证矩阵求导的正确性。</p>
-<p>在神经网络的链式求导过程，我们求Y对W的梯度，通常还会乘以Y本身对应的梯度 $grad_y$，考虑到 $grad_y$的维度，我们需要对 $ \frac{\partial Y}{\partial W} $ 转置。</p>
-<!-- raw HTML omitted -->
+<p>在神经网络的链式求导过程，我们求 $ Y $ 对 $ W $ 的梯度，通常还会乘以 $ Y $ 本身对应的梯度 $grad_y$，$grad_y$ 是 $ m \times k $ 的矩阵，这时候我们需要对 $ \frac{\partial Y}{\partial W} $ 转置。</p>
 <h2 id="softmax函数的反向传播">Softmax函数的反向传播</h2>
 <p>Softmax函数的定义是：</p>
 <p>$$ p_i = \frac{e^{z_i}}{\sum_j e^{z_j}} $$</p>
