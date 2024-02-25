@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Machine-learnings on 倔强的贝吉塔</title>
+        <title>Machine-Learnings on 倔强的贝吉塔</title>
         <link>/machine-learning/</link>
-        <description>Recent content in Machine-learnings on 倔强的贝吉塔</description>
+        <description>Recent content in Machine-Learnings on 倔强的贝吉塔</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Mon, 18 Dec 2023 21:54:24 +0800</lastBuildDate><atom:link href="/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -45,6 +45,18 @@
 &lt;p&gt;$$ \frac{\partial p_i}{\partial z_j} = \begin{cases} p_i (1 - p_j)   \text{  , if } i = j;
 \newline -p_i p_j  \text{ , if } i \neq j \end{cases} $$&lt;/p&gt;
 &lt;p&gt;Softmax函数的导数是一个矩阵，其中每个元素都是输出概率的函数。&lt;/p&gt;
+&lt;h2 id=&#34;relu函数的反向传播&#34;&gt;Relu函数的反向传播&lt;/h2&gt;
+&lt;p&gt;ReLU（Rectified Linear Unit）函数是深度学习中常用的一种激活函数，其数学表达式为：&lt;/p&gt;
+&lt;p&gt;$$ f(x) = \max(0, x) $$&lt;/p&gt;
+&lt;p&gt;其反向传播公式为：&lt;/p&gt;
+&lt;p&gt;$$  \frac{\partial f(x)}{\partial x} = \begin{cases} 0   \text{  , if } x \leq 0;
+\newline 1  \text{ , if } x &amp;gt; 0 \end{cases}$$&lt;/p&gt;
+&lt;h2 id=&#34;mse函数的反向传播&#34;&gt;MSE函数的反向传播&lt;/h2&gt;
+&lt;p&gt;MSE（Mean Squared Error）函数是深度学习中常用的一种损失函数，其公式如下：&lt;/p&gt;
+&lt;p&gt;$$ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 $$&lt;/p&gt;
+&lt;p&gt;其中，$ n $ 是数据点的数量，$ y_i $ 是第 $ i $ 个数据点的真实值，$ \hat{y}_i $ 是第 $ i $ 个数据点的预测值。&lt;/p&gt;
+&lt;p&gt;在反向传播过程中，MSE 损失函数单个预测值 $ \hat{y}_i $ 的梯度可以表示为：&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial MSE}{\partial \hat{y}_i} =  -\frac{2}{n} (y_i - \hat{y}_i) $$&lt;/p&gt;
 </description>
         </item>
         

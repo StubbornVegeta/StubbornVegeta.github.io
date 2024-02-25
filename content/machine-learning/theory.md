@@ -72,3 +72,25 @@ $$ \frac{\partial p_i}{\partial z_j} = \begin{cases} p_i (1 - p_j)   \text{  , i
 
 Softmax函数的导数是一个矩阵，其中每个元素都是输出概率的函数。
 
+## Relu函数的反向传播
+
+ReLU（Rectified Linear Unit）函数是深度学习中常用的一种激活函数，其数学表达式为：
+
+$$ f(x) = \max(0, x) $$
+
+其反向传播公式为：
+
+$$  \frac{\partial f(x)}{\partial x} = \begin{cases} 0   \text{  , if } x \leq 0;
+\newline 1  \text{ , if } x > 0 \end{cases}$$
+
+## MSE函数的反向传播
+
+MSE（Mean Squared Error）函数是深度学习中常用的一种损失函数，其公式如下：
+
+$$ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 $$
+
+其中，$ n $ 是数据点的数量，$ y_i $ 是第 $ i $ 个数据点的真实值，$ \hat{y}_i $ 是第 $ i $ 个数据点的预测值。
+
+在反向传播过程中，MSE 损失函数单个预测值 $ \hat{y}_i $ 的梯度可以表示为：
+
+$$ \frac{\partial MSE}{\partial \hat{y}_i} =  -\frac{2}{n} (y_i - \hat{y}_i) $$
